@@ -7,6 +7,7 @@ module main(input clock, input reset, input [7:0] addr, output [7:0] data);
 //           UltraScale
 // Xilinx HDL Language Template, version 2020.2
 
+(* LOC = "RAMB18_X0Y3", BEL = "RAMB18E2_U" *)
 RAMB18E2 #(
    // CASCADE_ORDER_A, CASCADE_ORDER_B: "FIRST", "MIDDLE", "LAST", "NONE"
    .CASCADE_ORDER_A("NONE"),
