@@ -3,6 +3,7 @@ module main(input clock, input reset, input [5:0] addr, output [7:0] data);
   // RAM64M8: 64-deep by 8-wide Multi Port LUT RAM (Mapped to eight LUT6s)
   //          UltraScale
   // Xilinx HDL Language Template, version 2020.2
+  (* LOC = "SLICE_X1Y1", BEL = "H6LUT" *)
   RAM64M8 #(
      .INIT_A(64'h0001110011001100), // Initial contents of A Port
      .INIT_B(64'h0100111100001111), // Initial contents of B Port
