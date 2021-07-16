@@ -4,8 +4,8 @@ module test_main (
     input [31:0] cycles
 );
 
-    logic [5:0] addr;
-    logic [7:0] data;
+    logic [2:0] addr;
+    logic [7:0] y;
 
     always @(posedge clock) begin
         if (reset) begin
@@ -16,11 +16,11 @@ module test_main (
         end
     end
 
-    main dut (clock, reset, addr, data);
+    main dut (clock, reset, addr, y);
 
     always @(posedge clock) begin
         if (!reset) begin
-            $display("cycle:%4d addr:%2x data:%2x", cycles, addr, data);
+            $display("cycle:%4d addr:%2x y:%2x", cycles, addr, y);
         end
     end
 
