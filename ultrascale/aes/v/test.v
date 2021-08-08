@@ -9,18 +9,19 @@ module test_main (
     logic aes_reset;
     logic [127:0] aes_ciphertext;
     logic aes_ready;
+    
+    logic [127:0] pass_ciphertext;
+    logic pass_ready;
 
     assign aes_key = 128'h000102030405060708090a0b0c0d0e0f;
     assign aes_plaintext = 128'h00112233445566778899aabbccddeeff;
-    assign aes_reset = cycles == 32'd0;
+    assign aes_reset = cycles == 32'd2;
 
-    main dut (clock, reset, aes_key, aes_plaintext, aes_reset, aes_ciphertext, aes_ready);
+    main a (clock, reset, aes_key, aes_plaintext, aes_ciphertext);
+    pass b (clock, reset, aes_key, aes_plaintext, pass_ciphertext);
 
     always @(posedge clock) begin
-        if (!reset && aes_ready) begin
-            assert(aes_ciphertext == 128'h69c4e0d86a7b0430d8cdb78070b4c55a) $display("cycle:%4d ciphertext:%032x expected:%032x", cycles, aes_ciphertext, 128'h69c4e0d86a7b0430d8cdb78070b4c55a);
-                else $error("ERROR");
-        end
+        $display("cycle:%4d reticle:%032x pyrtl:%032x", cycles, aes_ciphertext, pass_ciphertext);
     end
 
 endmodule
@@ -30,7 +31,7 @@ module test();
     logic reset;
     logic [31:0] cycles;
 
-    always #50000 clock = ~clock;
+    always #500000 clock = ~clock;
 
     // reset for 3 cycles
     initial begin
@@ -51,7 +52,7 @@ module test();
 
     // run for 10 cycles
     always @(posedge clock) begin
-        if (cycles == 32'd17) begin
+        if (cycles == 32'd32) begin
             $finish;
         end
     end
