@@ -7,7 +7,6 @@ pub struct Rom {
     pub use_bram: bool,
     pub addr: u32,
     pub data: u32,
-    pub size: u32,
     pub values: Vec<String>,
 }
 
@@ -17,7 +16,6 @@ impl Rom {
             use_bram: false,
             addr: (size as f32).log2() as u32,
             data,
-            size,
             values: Vec::new(),
         }
     }
@@ -26,7 +24,6 @@ impl Rom {
             use_bram: true,
             addr: (size as f32).log2() as u32,
             data,
-            size,
             values: Vec::new(),
         }
     }
