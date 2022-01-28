@@ -12,7 +12,7 @@ module main (
 
   initial begin
     {%- for value in values %}
-    ram[{{loop.index-1] = {{data}}'h{{value}};
+    ram[{{loop.index-1}}] = {{data}}'h{{value}};
     {%- endfor %}
   end
 

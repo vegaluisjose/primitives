@@ -1,7 +1,8 @@
 use askama::Template;
 use rand::{rngs::StdRng, Rng, SeedableRng};
+use derive_more::{Deref, DerefMut};
 
-#[derive(Template)]
+#[derive(Template, Clone, Debug)]
 #[template(path = "rom.txt")]
 pub struct Rom {
     pub use_bram: bool,
@@ -9,6 +10,10 @@ pub struct Rom {
     pub data: u32,
     pub values: Vec<String>,
 }
+
+#[derive(Template, Clone, Debug, Deref, DerefMut)]
+#[template(path = "rom_pyrtl.txt")]
+pub struct Foo(Rom);
 
 impl Rom {
     pub fn new(size: u32, data: u32) -> Self {
@@ -43,11 +48,13 @@ impl Rom {
 fn main() -> anyhow::Result<()> {
     let mut rng = StdRng::seed_from_u64(0);
     let size = 32;
-    let data = 16;
+    let data = 32;
     let mut rom = Rom::new(size, data);
     for _ in 0..size {
         rom.add_value(rng.gen());
     }
+    let foo = Foo(rom.clone());
     println!("{}", rom.render()?);
+    println!("{}", foo.render()?);
     Ok(())
 }

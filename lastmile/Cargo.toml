@@ -9,3 +9,4 @@ edition = "2021"
 askama = "0.10"
 anyhow = "1.0.53"
 rand = "0.8.4"
+derive_more = { version = "0.99.17", features = ["deref", "deref_mut"] }
