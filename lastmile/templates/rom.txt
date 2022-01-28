@@ -1,0 +1,24 @@
+module main (
+   input wire clock,
+   input wire reset,
+   input wire [{{addr}}-1:0] addr,
+   output wire [{{data}}-1:0] y
+);
+   {%- if use_bram %}
+   (* ram_style = "block" *) reg [{{data}}-1:0] ram;
+   {%- else %}
+   reg [{{data}}-1:0] ram;
+   {%- endif %}
+
+   always @(posedge clock) begin
+     case(addr)
+       {%- for value in values %}
+       {{size}}'d{{loop.index}}: ram <= {{data}}'h{{value}};
+       {%- endfor %}
+       default: ram <= {{data}}'d0;
+     endcase
+   end
+
+   assign y = ram;
+
+endmodule
