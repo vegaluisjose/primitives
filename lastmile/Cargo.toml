@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 askama = "0.10"
 anyhow = "1.0.53"
+rand = "0.8.4"

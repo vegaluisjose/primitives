@@ -13,7 +13,7 @@ module main (
    always @(posedge clock) begin
      case(addr)
        {%- for value in values %}
-       {{size}}'d{{loop.index}}: ram <= {{data}}'h{{value}};
+       {{size}}'d{{loop.index - 1}}: ram <= {{data}}'h{{value}};
        {%- endfor %}
        default: ram <= {{data}}'d0;
      endcase
