@@ -1,0 +1,20 @@
+module main (
+   input wire clock,
+   input wire reset,
+   input wire [{{addr-1}}:0] addr,
+   output wire [{{data-1}}:0] y
+);
+  {%- if use_bram %}
+  (* ram_style = "block" *) reg [{{data-1}}:0] ram [{{addr-1}}:0];
+  {%- else %}
+  reg [{{data-1}}:0] ram [{{addr-1}}:0];
+  {%- endif %}
+
+  initial begin
+    {%- for value in values %}
+    ram[{{loop.index-1] = {{data}}'h{{value}};
+    {%- endfor %}
+  end
+
+  assign y = ram[addr];
+endmodule
