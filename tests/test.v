@@ -6,6 +6,7 @@ module test;
   logic  [4:0] addr;
   logic [31:0] roma;
   logic [31:0] romb;
+  logic [31:0] romc;
 
   always #50000 clock = ~clock;
 
@@ -41,10 +42,11 @@ module test;
 
   rom_behav_a ra (.clock(clock), .reset(reset), .addr(addr), .y(roma));
   rom_behav_b rb (.clock(clock), .reset(reset), .addr(addr), .y(romb));
+  rom_prim_c rc (.clock(clock), .reset(reset), .addr(addr), .y(romc));
 
   always @(posedge clock) begin
     if (!reset) begin
-      $display("cycles:%04d, addr:%02x roma:%08x romb:%08x", cycles, addr, roma, romb);
+      $display("cycles:%04d, addr:%02x roma:%08x romb:%08x romc:%08x", cycles, addr, roma, romb, romc);
     end
   end
 
