@@ -13,12 +13,12 @@ fn read_file<P: AsRef<Path>>(file: P) -> anyhow::Result<String> {
 fn main() -> anyhow::Result<()> {
     let timing = read_file("data/timing.rpt")?;
     let util = read_file("data/util.rpt")?;
-    println!("{}", parse::parse_latency(&timing)?);
-    println!("dsp:{:?}", parse::parse_dsp(&util)?);
-    println!("lut:{:?}", parse::parse_lut(&util)?);
-    println!("reg:{:?}", parse::parse_reg(&util)?);
-    println!("lram:{:?}", parse::parse_lram(&util)?);
-    println!("bram:{:?}", parse::parse_bram(&util)?);
-    println!("uram:{:?}", parse::parse_uram(&util)?);
+    println!("lat: {}", parse::parse_latency(&timing)?);
+    println!("dsp: {:?}", parse::parse_dsp(&util)?);
+    println!("lut: {:?}", parse::parse_lut(&util)?);
+    println!("reg: {:?}", parse::parse_reg(&util)?);
+    println!("lram: {:?}", parse::parse_lram(&util)?);
+    println!("bram: {:?}", parse::parse_bram(&util)?);
+    println!("uram: {:?}", parse::parse_uram(&util)?);
     Ok(())
 }
