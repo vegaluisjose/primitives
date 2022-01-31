@@ -12,3 +12,6 @@ rand = "0.8.4"
 derive_more = { version = "0.99.17", features = ["deref", "deref_mut"] }
 regex = "1.5.4"
 lazy_static = "1.4.0"
+serde = { version = "1.0.117", features = [ "derive" ] }
+serde_json = "1.0.0"
+structopt = "0.3.0"

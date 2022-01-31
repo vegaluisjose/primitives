@@ -37,7 +37,10 @@ fn read_file<P: AsRef<Path>>(file: P) -> anyhow::Result<String> {
 }
 
 impl Profile {
-    pub fn from_timing_and_utilization<P: AsRef<Path>, Q: AsRef<Path>>(t: P, u: Q) -> anyhow::Result<Profile> {
+    pub fn from_timing_and_utilization<P: AsRef<Path>, Q: AsRef<Path>>(
+        t: P,
+        u: Q,
+    ) -> anyhow::Result<Profile> {
         let timing = read_file(t)?;
         let util = read_file(u)?;
         Ok(Profile {
