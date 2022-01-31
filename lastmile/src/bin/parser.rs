@@ -6,7 +6,7 @@ use structopt::StructOpt;
 
 #[derive(Debug, StructOpt)]
 #[structopt(
-    name = "hammer",
+    name = "parser",
     about = "A tool for parsing timing and utilization results"
 )]
 struct Opt {
