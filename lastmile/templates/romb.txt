@@ -5,9 +5,9 @@ module main (
    output wire [{{data-1}}:0] y
 );
   {%- if use_bram %}
-  (* ram_style = "block" *) reg [{{data-1}}:0] ram [{{addr-1}}:0];
+  (* ram_style = "block" *) reg [{{data-1}}:0] ram [{{size-1}}:0];
   {%- else %}
-  reg [{{data-1}}:0] ram [{{addr-1}}:0];
+  reg [{{data-1}}:0] ram [{{size-1}}:0];
   {%- endif %}
 
   initial begin
@@ -16,5 +16,14 @@ module main (
     {%- endfor %}
   end
 
-  assign y = ram[addr];
+  reg [{{data-1}}:0] data;
+  always @(posedge clock) begin
+    if (reset) begin
+      data <= 0;
+    end else begin
+      data <= ram[addr];
+    end
+  end
+  assign y = data;
+
 endmodule

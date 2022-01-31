@@ -11,9 +11,9 @@ module main (
   {%- endif %}
   
   always @(posedge clock) begin
-    case(addr)
+    case({addr, reset})
       {%- for value in values %}
-      {{addr}}'d{{loop.index-1}}: ram <= {{data}}'h{{value}};
+      {% raw %}{{% endraw %}{{addr}}'d{{loop.index-1}}, 1'b0{% raw %}}{% endraw %}: ram <= {{data}}'h{{value}};
       {%- endfor %}
       default: ram <= {{data}}'d0;
     endcase
