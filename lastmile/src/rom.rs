@@ -1,5 +1,7 @@
 use askama::Template;
 use derive_more::{Deref, DerefMut};
+use std::fmt;
+use std::str::FromStr;
 
 #[derive(Clone, Debug)]
 pub struct Rom {
@@ -49,3 +51,30 @@ pub struct RomA(pub Rom);
 #[derive(Template, Clone, Debug, Deref, DerefMut)]
 #[template(path = "romb.txt")]
 pub struct RomB(pub Rom);
+
+#[derive(Clone, Debug)]
+pub enum RomType {
+    A,
+    B,
+}
+
+impl fmt::Display for RomType {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        let backend = match self {
+            RomType::A => "a",
+            RomType::B => "b",
+        };
+        write!(f, "{}", backend)
+    }
+}
+
+impl FromStr for RomType {
+    type Err = anyhow::Error;
+    fn from_str(input: &str) -> anyhow::Result<Self> {
+        match input {
+            "a" => Ok(RomType::A),
+            "b" => Ok(RomType::B),
+            n => Err(anyhow::anyhow!("unsupported rom {}", n)),
+        }
+    }
+}
