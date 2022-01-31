@@ -10,3 +10,5 @@ askama = "0.10"
 anyhow = "1.0.53"
 rand = "0.8.4"
 derive_more = { version = "0.99.17", features = ["deref", "deref_mut"] }
+regex = "1.5.4"
+lazy_static = "1.4.0"
