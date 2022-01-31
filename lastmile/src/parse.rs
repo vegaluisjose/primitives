@@ -30,6 +30,7 @@ pub fn parse_dsp(input: &str) -> anyhow::Result<(u32, u32)> {
     }
 }
 
+// return used and available
 pub fn parse_bram(input: &str) -> anyhow::Result<(u32, u32)> {
     lazy_static! {
         static ref RE: Regex =
@@ -44,6 +45,7 @@ pub fn parse_bram(input: &str) -> anyhow::Result<(u32, u32)> {
     }
 }
 
+// return used and available
 pub fn parse_uram(input: &str) -> anyhow::Result<(u32, u32)> {
     lazy_static! {
         static ref RE: Regex =
@@ -72,6 +74,7 @@ pub fn parse_lram(input: &str) -> anyhow::Result<(u32, u32)> {
     }
 }
 
+// return used and available
 pub fn parse_lut(input: &str) -> anyhow::Result<(u32, u32)> {
     lazy_static! {
         static ref RE: Regex =
