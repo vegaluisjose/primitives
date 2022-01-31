@@ -1,4 +1,4 @@
-module main (
+module {{name}} (
    input wire clock,
    input wire reset,
    input wire [{{addr-1}}:0] addr,

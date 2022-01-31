@@ -9,6 +9,9 @@ use structopt::StructOpt;
 #[derive(Debug, StructOpt)]
 #[structopt(name = "rom", about = "A tool for generating two types of roms")]
 struct Opt {
+    /// Name of the rom
+    #[structopt(short, long)]
+    name: String,
     /// Size (number of elements) of ROM
     #[structopt(short, long)]
     size: u32,
@@ -26,7 +29,7 @@ struct Opt {
 fn main() -> anyhow::Result<()> {
     let opt = Opt::from_args();
     let mut rng = StdRng::seed_from_u64(0);
-    let mut rom = Rom::new(opt.size, opt.data);
+    let mut rom = Rom::new(&opt.name, opt.size, opt.data);
     for _ in 0..opt.size {
         rom.add_value(rng.gen());
     }

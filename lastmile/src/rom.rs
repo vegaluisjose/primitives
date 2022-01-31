@@ -5,6 +5,7 @@ use std::str::FromStr;
 
 #[derive(Clone, Debug)]
 pub struct Rom {
+    pub name: String,
     pub size: u32,
     pub addr: u32,
     pub data: u32,
@@ -13,8 +14,9 @@ pub struct Rom {
 }
 
 impl Rom {
-    pub fn new(size: u32, data: u32) -> Self {
+    pub fn new(name: &str, size: u32, data: u32) -> Self {
         Self {
+            name: name.into(),
             size,
             addr: (size as f32).log2() as u32,
             data,
@@ -22,8 +24,9 @@ impl Rom {
             use_bram: false,
         }
     }
-    pub fn new_with_bram(size: u32, data: u32) -> Self {
+    pub fn new_with_bram(name: &str, size: u32, data: u32) -> Self {
         Self {
+            name: name.into(),
             size,
             addr: (size as f32).log2() as u32,
             data,
