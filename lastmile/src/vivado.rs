@@ -1,7 +1,9 @@
+use anyhow::Context;
 use askama::Template;
 use derive_more::{Deref, DerefMut};
 use std::fmt;
-use std::path::PathBuf;
+use std::fs;
+use std::path::{Path, PathBuf};
 
 #[derive(Clone, Debug, Deref, DerefMut)]
 pub struct TemplatePathBuf(pub PathBuf);
@@ -29,13 +31,15 @@ pub struct Vivado {
 }
 
 impl Vivado {
-    pub fn new(name: &str) -> Self {
-        Vivado {
+    pub fn new<P: AsRef<Path>>(name: &str, verilog_file: P) -> anyhow::Result<Vivado> {
+        let vf = verilog_file.as_ref().to_path_buf();
+        let vf = fs::canonicalize(vf).context("failed to read verilog file")?;
+        Ok(Vivado {
             name: name.to_string(),
-            verilog_file: PathBuf::from("top.v").into(),
+            verilog_file: vf.into(),
             timing_file: PathBuf::from("timing.rpt").into(),
             timingsum_file: PathBuf::from("timingsum.rpt").into(),
             util_file: PathBuf::from("util.rpt").into(),
-        }
+        })
     }
 }
