@@ -31,7 +31,7 @@ struct Opt {
 
 fn main() -> anyhow::Result<()> {
     let opt = Opt::from_args();
-    println!("Generating rom {}", opt.name);
+    println!("Generating {}", opt.name);
     let mut rng = StdRng::seed_from_u64(opt.seed);
     let mut rom = Rom::new(&opt.name, opt.size, opt.data);
     for _ in 0..opt.size {
