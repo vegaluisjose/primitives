@@ -34,11 +34,14 @@ pub fn parse_dsp(input: &str) -> anyhow::Result<(u32, u32)> {
 pub fn parse_bram(input: &str) -> anyhow::Result<(u32, u32)> {
     lazy_static! {
         static ref RE: Regex =
-            Regex::new(r"\|[[:space:]]+Block RAM Tile[[:space:]]+\|[[:space:]]+([[:digit:]]+)[[:space:]]+\|[[:space:]]+[[:digit:]]+[[:space:]]+\|[[:space:]]+[[:digit:]]+[[:space:]]+\|[[:space:]]+([[:digit:]]+)[[:space:]]+\|").unwrap();
+            Regex::new(r"\|[[:space:]]+Block RAM Tile[[:space:]]+\|[[:space:]]+([[:digit:]]*.*[[:digit:]]+)[[:space:]]+\|[[:space:]]+[[:digit:]]+[[:space:]]+\|[[:space:]]+[[:digit:]]+[[:space:]]+\|[[:space:]]+([[:digit:]]+)[[:space:]]+\|").unwrap();
     }
     match RE.captures(input) {
-        Some(c) => match (c[1].parse::<u32>(), c[2].parse::<u32>()) {
-            (Ok(used), Ok(avail)) => Ok((used, avail)),
+        Some(c) => match (c[1].parse::<f32>(), c[2].parse::<u32>()) {
+            (Ok(used), Ok(avail)) => {
+                let u = used.ceil() as u32;
+                Ok((u, avail))
+            }
             (_, _) => Err(anyhow::anyhow!("could not convert dsp used to u32")),
         },
         None => Err(anyhow::anyhow!("could not parse bram")),
