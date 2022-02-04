@@ -1,0 +1,9 @@
+read_verilog -sv {{verilog_file}}
+read_xdc -mode out_of_context constraint.xdc
+synth_design -mode "out_of_context" -flatten_hierarchy "rebuilt" -top {{name}} -part "xczu3eg-sbva484-1-e"
+opt_design
+place_design -directive Default
+route_design -directive Default
+report_timing -file {{timing_file}}
+report_timing_summary -file {{timingsum_file}}
+report_utilization -file {{util_file}}
