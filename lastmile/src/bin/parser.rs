@@ -10,13 +10,13 @@ use structopt::StructOpt;
     about = "A tool for parsing timing and utilization results"
 )]
 struct Opt {
-    /// Timing file
-    #[structopt(short = "t", long)]
+    /// The timing file
+    #[structopt(short = "t", long, default_value = "timing.rpt")]
     timing_file: PathBuf,
-    /// Timing file
-    #[structopt(short = "u", long)]
+    /// The utilization file
+    #[structopt(short = "u", long, default_value = "util.rpt")]
     utilization_file: PathBuf,
-    /// Output file
+    /// The output file
     #[structopt(short, long)]
     output: Option<PathBuf>,
 }
