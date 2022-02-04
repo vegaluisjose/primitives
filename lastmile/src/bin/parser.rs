@@ -23,6 +23,11 @@ struct Opt {
 
 fn main() -> anyhow::Result<()> {
     let opt = Opt::from_args();
+    println!(
+        "Parsing timing:{} util:{}",
+        opt.timing_file.display(),
+        opt.utilization_file.display()
+    );
     let profile = Profile::from_timing_and_utilization(opt.timing_file, opt.utilization_file)?;
     if let Some(output) = opt.output {
         let mut file = File::create(output)?;
