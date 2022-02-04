@@ -31,9 +31,9 @@ fn main() -> anyhow::Result<()> {
     let profile = Profile::from_timing_and_utilization(opt.timing_file, opt.utilization_file)?;
     if let Some(output) = opt.output {
         let mut file = File::create(output)?;
-        file.write_all(format!("{:#?}", profile).as_bytes())?;
+        file.write_all(format!("{}", profile).as_bytes())?;
     } else {
-        println!("{:#?}", profile);
+        println!("{}", profile);
     }
     Ok(())
 }

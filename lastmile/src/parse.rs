@@ -26,7 +26,7 @@ pub fn parse_dsp(input: &str) -> anyhow::Result<(u32, u32)> {
             (Ok(used), Ok(avail)) => Ok((used, avail)),
             (_, _) => Err(anyhow::anyhow!("could not convert dsp used to u32")),
         },
-        None => Err(anyhow::anyhow!("could not parse dsp used")),
+        None => Err(anyhow::anyhow!("could not parse dsp")),
     }
 }
 
@@ -41,7 +41,7 @@ pub fn parse_bram(input: &str) -> anyhow::Result<(u32, u32)> {
             (Ok(used), Ok(avail)) => Ok((used, avail)),
             (_, _) => Err(anyhow::anyhow!("could not convert dsp used to u32")),
         },
-        None => Err(anyhow::anyhow!("could not parse dsp used")),
+        None => Err(anyhow::anyhow!("could not parse bram")),
     }
 }
 
@@ -56,7 +56,7 @@ pub fn parse_uram(input: &str) -> anyhow::Result<(u32, u32)> {
             (Ok(used), Ok(avail)) => Ok((used, avail)),
             (_, _) => Err(anyhow::anyhow!("could not convert dsp used to u32")),
         },
-        None => Err(anyhow::anyhow!("could not parse dsp used")),
+        None => Ok((0, 0)),
     }
 }
 
@@ -70,7 +70,7 @@ pub fn parse_lram(input: &str) -> anyhow::Result<(u32, u32)> {
             (Ok(used), Ok(avail)) => Ok((used, avail)),
             (_, _) => Err(anyhow::anyhow!("could not convert dsp used to u32")),
         },
-        None => Err(anyhow::anyhow!("could not parse dsp used")),
+        None => Err(anyhow::anyhow!("could not parse lram")),
     }
 }
 
@@ -85,7 +85,7 @@ pub fn parse_lut(input: &str) -> anyhow::Result<(u32, u32)> {
             (Ok(used), Ok(avail)) => Ok((used, avail)),
             (_, _) => Err(anyhow::anyhow!("could not convert dsp used to u32")),
         },
-        None => Err(anyhow::anyhow!("could not parse dsp used")),
+        None => Err(anyhow::anyhow!("could not parse lut")),
     }
 }
 
@@ -99,6 +99,6 @@ pub fn parse_reg(input: &str) -> anyhow::Result<(u32, u32)> {
             (Ok(used), Ok(avail)) => Ok((used, avail)),
             (_, _) => Err(anyhow::anyhow!("could not convert dsp used to u32")),
         },
-        None => Err(anyhow::anyhow!("could not parse dsp used")),
+        None => Err(anyhow::anyhow!("could not parse reg")),
     }
 }

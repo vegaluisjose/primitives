@@ -1,9 +1,10 @@
 use crate::parse;
+use serde::Serialize;
 use std::fs::File;
 use std::io::Read;
 use std::path::Path;
 
-#[derive(Clone, Debug)]
+#[derive(Clone, Debug, Serialize)]
 pub struct Value {
     pub used: u32,
     pub total: u32,
@@ -18,7 +19,7 @@ impl From<(u32, u32)> for Value {
     }
 }
 
-#[derive(Clone, Debug)]
+#[derive(Clone, Debug, Serialize)]
 pub struct Profile {
     pub latency: f32,
     pub lut: Value,
@@ -34,6 +35,12 @@ fn read_file<P: AsRef<Path>>(file: P) -> anyhow::Result<String> {
     let mut contents = String::new();
     f.read_to_string(&mut contents)?;
     Ok(contents)
+}
+
+impl std::fmt::Display for Profile {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(f, "{}", serde_json::to_string_pretty(&self).unwrap())
+    }
 }
 
 impl Profile {
