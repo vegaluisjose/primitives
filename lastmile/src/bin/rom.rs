@@ -10,17 +10,20 @@ use structopt::StructOpt;
 #[structopt(name = "rom", about = "A tool for generating two types of roms")]
 struct Opt {
     /// Name of the rom
-    #[structopt(short, long)]
+    #[structopt(short, long, default_value("rom"))]
     name: String,
     /// Size (number of elements) of ROM
-    #[structopt(short, long)]
+    #[structopt(short, long, default_value("4"))]
     size: u32,
     /// Data width of ROM
-    #[structopt(short, long)]
+    #[structopt(short, long, default_value("32"))]
     data: u32,
     /// Type of ROM
-    #[structopt(short, long)]
+    #[structopt(short, long, default_value("a"))]
     rom: RomType,
+    /// Seed for data ROM
+    #[structopt(long, default_value("0"))]
+    seed: u64,
     /// Output file
     #[structopt(short, long)]
     output: Option<PathBuf>,
@@ -28,7 +31,7 @@ struct Opt {
 
 fn main() -> anyhow::Result<()> {
     let opt = Opt::from_args();
-    let mut rng = StdRng::seed_from_u64(0);
+    let mut rng = StdRng::seed_from_u64(opt.seed);
     let mut rom = Rom::new(&opt.name, opt.size, opt.data);
     for _ in 0..opt.size {
         rom.add_value(rng.gen());
