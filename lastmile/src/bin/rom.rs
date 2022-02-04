@@ -40,7 +40,6 @@ fn main() -> anyhow::Result<()> {
         RomType::A => RomA(rom).render()?,
         RomType::B => RomB(rom).render()?,
     };
-    // let s = genrom.render()?;
     if let Some(output) = opt.output {
         let mut file = File::create(output)?;
         file.write_all(s.as_bytes())?;
