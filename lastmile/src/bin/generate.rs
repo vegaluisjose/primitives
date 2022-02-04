@@ -24,6 +24,9 @@ struct Opt {
     /// Seed for data ROM
     #[structopt(long, default_value("0"))]
     seed: u64,
+    /// Add bram pragma
+    #[structopt(long)]
+    bram: bool,
     /// Output file
     #[structopt(short, long)]
     output: Option<PathBuf>,
@@ -33,7 +36,11 @@ fn main() -> anyhow::Result<()> {
     let opt = Opt::from_args();
     println!("Generating {}", opt.name);
     let mut rng = StdRng::seed_from_u64(opt.seed);
-    let mut rom = Rom::new(&opt.name, opt.size, opt.data);
+    let mut rom = if opt.bram {
+        Rom::new_with_bram(&opt.name, opt.size, opt.data)
+    } else {
+        Rom::new(&opt.name, opt.size, opt.data)
+    };
     for _ in 0..opt.size {
         rom.add_value(rng.gen());
     }
