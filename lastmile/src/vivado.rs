@@ -43,3 +43,19 @@ impl Vivado {
         })
     }
 }
+
+#[derive(Template, Clone, Debug)]
+#[template(path = "constraint.txt")]
+pub struct Constraint {
+    pub name: String,
+    pub period: u32,
+}
+
+impl Default for Constraint {
+    fn default() -> Constraint {
+        Constraint {
+            name: "clock".into(),
+            period: 2,
+        }
+    }
+}

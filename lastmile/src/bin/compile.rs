@@ -1,5 +1,5 @@
 use askama::Template;
-use lastmile::vivado::Vivado;
+use lastmile::vivado::{Constraint, Vivado};
 use std::fs;
 use std::path::PathBuf;
 use structopt::StructOpt;
@@ -29,8 +29,11 @@ fn main() -> anyhow::Result<()> {
     } else {
         TempDir::new("out")?.path().to_path_buf()
     };
-    let vivado = Vivado::new("top", "./some.v")?;
-    let tcl = workdir.join("vivado.tcl");
-    fs::write(tcl, vivado.render()?.as_bytes())?;
+    let vivado = Vivado::new(&opt.name, opt.input)?;
+    let vivado_tcl = workdir.join("vivado.tcl");
+    fs::write(vivado_tcl, vivado.render()?.as_bytes())?;
+    let constr = Constraint::default();
+    let constr_tcl = workdir.join("constraint.xdc");
+    fs::write(constr_tcl, constr.render()?.as_bytes())?;
     Ok(())
 }
