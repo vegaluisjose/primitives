@@ -24,6 +24,8 @@ struct Opt {
     /// The work directory
     #[structopt(short, long)]
     workdir: Option<PathBuf>,
+    #[structopt(long = "disable-constraint")]
+    disable_constraint: bool,
 }
 
 fn main() -> anyhow::Result<()> {
@@ -38,7 +40,11 @@ fn main() -> anyhow::Result<()> {
     } else {
         tmp.path().to_path_buf()
     };
-    let vivado = Vivado::new(&opt.name, opt.input)?;
+    let vivado = if opt.disable_constraint {
+        Vivado::new(&opt.name, opt.input)?
+    } else {
+        Vivado::new_with_constraint(&opt.name, opt.input)?
+    };
     let vivado_tcl = workdir.join("vivado.tcl");
     fs::write(vivado_tcl, vivado.render()?.as_bytes())?;
     let constr = Constraint::default();

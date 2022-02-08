@@ -28,6 +28,7 @@ pub struct Vivado {
     pub timing_file: TemplatePathBuf,
     pub timingsum_file: TemplatePathBuf,
     pub util_file: TemplatePathBuf,
+    pub use_constraint: bool,
 }
 
 impl Vivado {
@@ -40,6 +41,23 @@ impl Vivado {
             timing_file: PathBuf::from("timing.rpt").into(),
             timingsum_file: PathBuf::from("timingsum.rpt").into(),
             util_file: PathBuf::from("util.rpt").into(),
+            use_constraint: false,
+        })
+    }
+
+    pub fn new_with_constraint<P: AsRef<Path>>(
+        name: &str,
+        verilog_file: P,
+    ) -> anyhow::Result<Vivado> {
+        let vf = verilog_file.as_ref().to_path_buf();
+        let vf = fs::canonicalize(vf).context("failed to read verilog file")?;
+        Ok(Vivado {
+            name: name.to_string(),
+            verilog_file: vf.into(),
+            timing_file: PathBuf::from("timing.rpt").into(),
+            timingsum_file: PathBuf::from("timingsum.rpt").into(),
+            util_file: PathBuf::from("util.rpt").into(),
+            use_constraint: true,
         })
     }
 }
@@ -55,7 +73,7 @@ impl Default for Constraint {
     fn default() -> Constraint {
         Constraint {
             name: "clock".into(),
-            period: 2,
+            period: 5,
         }
     }
 }

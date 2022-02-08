@@ -1,2 +1,1 @@
 create_clock -period {{period}} -name {{name}} -waveform {0.0 1} [get_ports {{name}}]
-set_property HD.CLK_SRC BUFGCTRL_X0Y0 [get_ports {{name}}]
