@@ -39,8 +39,10 @@ for i, c in enumerate(config):
     df = process(rom=c[0], use_bram=c[1], constraint=True)
     res = df.loc[:, ["lut", "bram"]]  
     res.plot(ax=axes[0][i], kind='bar', stacked=True)
+    axes[0][i].set_ylim(top=10)
     lat = df.loc[:, ["latency"]]
     lat.plot(ax=axes[1][i], kind='bar', stacked=True)
+    axes[1][i].set_ylim(top=0.25)
 plt.savefig("rom.pdf")
 
 
