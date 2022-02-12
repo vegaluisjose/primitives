@@ -35,24 +35,22 @@ def process(rom="roma", use_bram=False, constraint=True):
 
 config = [("roma", False), ("romb", False), ("romb", True)]
 _, axes = plt.subplots(2, 3, figsize=(16, 8))
+titles = ["(a) Verilog", "(b) Verilog", "(c) Reticle"]
 for i, c in enumerate(config):
     df = process(rom=c[0], use_bram=c[1], constraint=True)
-    res = df.loc[:, ["lut", "bram"]]  
-    res.plot(ax=axes[0][i], kind='bar', stacked=True)
+    res = df.loc[:, ["lut", "bram"]]
+    res.plot(ax=axes[0][i], kind="bar", stacked=True)
     axes[0][i].set_ylim(top=10)
+    axes[0][i].grid(axis="y", linestyle="--")
+    axes[0][i].set_title(titles[i])
     lat = df.loc[:, ["latency"]]
-    lat.plot(ax=axes[1][i], kind='bar', stacked=True)
+    lat.plot(ax=axes[1][i], kind="bar")
+    axes[1][i].set_xlabel("Number of elements")
     axes[1][i].set_ylim(top=0.25)
+    axes[1][i].grid(axis="y", linestyle="--")
+    axes[1][i].get_legend().remove()
+    if i == 0:
+	axes[0][i].set_ylabel("Number of resources")
+	axes[1][i].set_ylabel("Data path delay (ns)")
 plt.savefig("rom.pdf")
 
-
-# if c[1]:
-#     plt.savefig("resource_{}_with_bram.pdf".format(c[0]))
-# else:
-#     plt.savefig("resource_{}.pdf".format(c[0]))
-# lat = df.loc[:, ["latency"]]
-# lat.plot(kind='bar', stacked=True)
-# if c[1]:
-#     plt.savefig("latency_{}_with_bram.pdf".format(c[0]))
-# else:
-#     plt.savefig("latency_{}.pdf".format(c[0]))
