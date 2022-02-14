@@ -1,0 +1,1942 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Feb 14 00:42:35 2022
+# Process ID: 3134462
+# Current directory: /home/vega/github/primitives/lastmile/dis
+# Command line: vivado -mode batch -source vivado.tcl
+# Log file: /home/vega/github/primitives/lastmile/dis/vivado.log
+# Journal file: /home/vega/github/primitives/lastmile/dis/vivado.jou
+# Running On: katana, OS: Linux, CPU Frequency: 2234.571 MHz, CPU Physical cores: 32, Host memory: 135055 MB
+#-----------------------------------------------------------
+source vivado.tcl
+# read_verilog -sv /home/vega/github/primitives/lastmile/aes/reticle_dis.v
+# read_xdc -mode out_of_context constraint.xdc
+# synth_design -mode "out_of_context" -flatten_hierarchy "rebuilt" -top toplevel -part "xck26-sfvc784-2LV-c"
+Command: synth_design -mode out_of_context -flatten_hierarchy rebuilt -top toplevel -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3134500
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2991.488 ; gain = 167.766 ; free physical = 117521 ; free virtual = 132775
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'toplevel' [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'toplevel' (1#1) [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3228.270 ; gain = 404.547 ; free physical = 118450 ; free virtual = 133705
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3228.270 ; gain = 404.547 ; free physical = 118470 ; free virtual = 133725
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3228.270 ; gain = 404.547 ; free physical = 118470 ; free virtual = 133725
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3228.270 ; gain = 0.000 ; free physical = 118460 ; free virtual = 133715
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/vega/github/primitives/lastmile/dis/constraint.xdc]
+Finished Parsing XDC File [/home/vega/github/primitives/lastmile/dis/constraint.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3365.113 ; gain = 0.000 ; free physical = 118363 ; free virtual = 133618
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3365.113 ; gain = 0.000 ; free physical = 118362 ; free virtual = 133617
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3365.113 ; gain = 541.391 ; free physical = 118449 ; free virtual = 133704
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3365.113 ; gain = 541.391 ; free physical = 118449 ; free virtual = 133704
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3365.113 ; gain = 541.391 ; free physical = 118449 ; free virtual = 133704
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:71]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:73]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:75]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:74]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:79]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:81]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:83]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:82]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:87]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:89]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:91]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:90]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:95]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:97]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:99]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:98]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:119]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:121]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:123]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:122]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:127]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:129]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:131]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:130]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:135]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:137]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:139]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:138]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:143]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:145]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:147]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:146]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:167]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:169]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:171]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:170]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:175]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:177]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:179]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:178]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:183]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:185]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:187]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:186]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:191]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:193]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:195]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:194]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:215]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:217]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:219]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:218]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:223]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:225]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:227]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:226]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:231]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:233]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:235]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:234]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:239]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:241]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:243]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:242]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:263]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:265]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:267]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:266]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:271]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:273]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:275]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:274]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:279]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:281]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:283]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:282]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:287]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:289]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:291]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:290]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:311]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:313]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:315]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:314]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:319]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:321]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:323]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:322]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:327]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:329]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:331]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:330]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:335]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:337]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:339]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:338]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:359]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:361]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:363]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/vega/github/primitives/lastmile/aes/reticle_dis.v:362]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3365.113 ; gain = 541.391 ; free physical = 118382 ; free virtual = 133639
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 11    
+	   2 Input     32 Bit         XORs := 40    
+	   2 Input      8 Bit         XORs := 10    
+	   4 Input      8 Bit         XORs := 144   
++---Registers : 
+	                8 Bit    Registers := 776   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:55 ; elapsed = 00:02:01 . Memory (MB): peak = 3632.582 ; gain = 808.859 ; free physical = 118221 ; free virtual = 133499
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|toplevel    | mem_0      | 256x8         | LUT            | 
+|toplevel    | mem_11     | 256x8         | LUT            | 
+|toplevel    | mem_10     | 256x8         | LUT            | 
+|toplevel    | mem_9      | 256x8         | LUT            | 
+|toplevel    | mem_12     | 256x8         | LUT            | 
+|toplevel    | mem_15     | 256x8         | LUT            | 
+|toplevel    | mem_14     | 256x8         | LUT            | 
+|toplevel    | mem_13     | 256x8         | LUT            | 
+|toplevel    | mem_16     | 256x8         | LUT            | 
+|toplevel    | mem_19     | 256x8         | LUT            | 
+|toplevel    | mem_18     | 256x8         | LUT            | 
+|toplevel    | mem_17     | 256x8         | LUT            | 
+|toplevel    | mem_20     | 256x8         | LUT            | 
+|toplevel    | mem_23     | 256x8         | LUT            | 
+|toplevel    | mem_22     | 256x8         | LUT            | 
+|toplevel    | mem_21     | 256x8         | LUT            | 
+|toplevel    | mem_24     | 256x8         | LUT            | 
+|toplevel    | mem_27     | 256x8         | LUT            | 
+|toplevel    | mem_26     | 256x8         | LUT            | 
+|toplevel    | mem_25     | 256x8         | LUT            | 
+|toplevel    | mem_28     | 256x8         | LUT            | 
+|toplevel    | mem_31     | 256x8         | LUT            | 
+|toplevel    | mem_30     | 256x8         | LUT            | 
+|toplevel    | mem_29     | 256x8         | LUT            | 
+|toplevel    | mem_32     | 256x8         | LUT            | 
+|toplevel    | mem_35     | 256x8         | LUT            | 
+|toplevel    | mem_34     | 256x8         | LUT            | 
+|toplevel    | mem_33     | 256x8         | LUT            | 
+|toplevel    | mem_36     | 256x8         | LUT            | 
+|toplevel    | mem_39     | 256x8         | LUT            | 
+|toplevel    | mem_38     | 256x8         | LUT            | 
+|toplevel    | mem_37     | 256x8         | LUT            | 
+|toplevel    | mem_40     | 256x8         | LUT            | 
+|toplevel    | mem_43     | 256x8         | LUT            | 
+|toplevel    | mem_42     | 256x8         | LUT            | 
+|toplevel    | mem_41     | 256x8         | LUT            | 
+|toplevel    | mem_44     | 256x8         | LUT            | 
+|toplevel    | mem_47     | 256x8         | LUT            | 
+|toplevel    | mem_46     | 256x8         | LUT            | 
+|toplevel    | mem_45     | 256x8         | LUT            | 
+|toplevel    | mem_63     | 256x8         | LUT            | 
+|toplevel    | mem_62     | 256x8         | LUT            | 
+|toplevel    | mem_61     | 256x8         | LUT            | 
+|toplevel    | mem_60     | 256x8         | LUT            | 
+|toplevel    | mem_59     | 256x8         | LUT            | 
+|toplevel    | mem_58     | 256x8         | LUT            | 
+|toplevel    | mem_57     | 256x8         | LUT            | 
+|toplevel    | mem_56     | 256x8         | LUT            | 
+|toplevel    | mem_55     | 256x8         | LUT            | 
+|toplevel    | mem_54     | 256x8         | LUT            | 
+|toplevel    | mem_53     | 256x8         | LUT            | 
+|toplevel    | mem_52     | 256x8         | LUT            | 
+|toplevel    | mem_51     | 256x8         | LUT            | 
+|toplevel    | mem_50     | 256x8         | LUT            | 
+|toplevel    | mem_49     | 256x8         | LUT            | 
+|toplevel    | mem_48     | 256x8         | LUT            | 
+|toplevel    | mem_4      | 256x8         | LUT            | 
+|toplevel    | mem_3      | 256x8         | LUT            | 
+|toplevel    | mem_65     | 256x8         | LUT            | 
+|toplevel    | mem_64     | 256x8         | LUT            | 
+|toplevel    | mem_67     | 256x8         | LUT            | 
+|toplevel    | mem_66     | 256x8         | LUT            | 
+|toplevel    | mem_69     | 256x8         | LUT            | 
+|toplevel    | mem_68     | 256x8         | LUT            | 
+|toplevel    | mem_71     | 256x8         | LUT            | 
+|toplevel    | mem_70     | 256x8         | LUT            | 
+|toplevel    | mem_73     | 256x8         | LUT            | 
+|toplevel    | mem_72     | 256x8         | LUT            | 
+|toplevel    | mem_75     | 256x8         | LUT            | 
+|toplevel    | mem_74     | 256x8         | LUT            | 
+|toplevel    | mem_77     | 256x8         | LUT            | 
+|toplevel    | mem_76     | 256x8         | LUT            | 
+|toplevel    | mem_79     | 256x8         | LUT            | 
+|toplevel    | mem_78     | 256x8         | LUT            | 
+|toplevel    | mem_81     | 256x8         | LUT            | 
+|toplevel    | mem_80     | 256x8         | LUT            | 
+|toplevel    | mem_83     | 256x8         | LUT            | 
+|toplevel    | mem_82     | 256x8         | LUT            | 
+|toplevel    | mem_85     | 256x8         | LUT            | 
+|toplevel    | mem_84     | 256x8         | LUT            | 
+|toplevel    | mem_87     | 256x8         | LUT            | 
+|toplevel    | mem_86     | 256x8         | LUT            | 
+|toplevel    | mem_89     | 256x8         | LUT            | 
+|toplevel    | mem_88     | 256x8         | LUT            | 
+|toplevel    | mem_91     | 256x8         | LUT            | 
+|toplevel    | mem_90     | 256x8         | LUT            | 
+|toplevel    | mem_93     | 256x8         | LUT            | 
+|toplevel    | mem_92     | 256x8         | LUT            | 
+|toplevel    | mem_109    | 256x8         | LUT            | 
+|toplevel    | mem_108    | 256x8         | LUT            | 
+|toplevel    | mem_107    | 256x8         | LUT            | 
+|toplevel    | mem_106    | 256x8         | LUT            | 
+|toplevel    | mem_105    | 256x8         | LUT            | 
+|toplevel    | mem_104    | 256x8         | LUT            | 
+|toplevel    | mem_103    | 256x8         | LUT            | 
+|toplevel    | mem_102    | 256x8         | LUT            | 
+|toplevel    | mem_101    | 256x8         | LUT            | 
+|toplevel    | mem_100    | 256x8         | LUT            | 
+|toplevel    | mem_99     | 256x8         | LUT            | 
+|toplevel    | mem_98     | 256x8         | LUT            | 
+|toplevel    | mem_97     | 256x8         | LUT            | 
+|toplevel    | mem_96     | 256x8         | LUT            | 
+|toplevel    | mem_95     | 256x8         | LUT            | 
+|toplevel    | mem_94     | 256x8         | LUT            | 
+|toplevel    | mem_111    | 256x8         | LUT            | 
+|toplevel    | mem_110    | 256x8         | LUT            | 
+|toplevel    | mem_113    | 256x8         | LUT            | 
+|toplevel    | mem_112    | 256x8         | LUT            | 
+|toplevel    | mem_115    | 256x8         | LUT            | 
+|toplevel    | mem_114    | 256x8         | LUT            | 
+|toplevel    | mem_117    | 256x8         | LUT            | 
+|toplevel    | mem_116    | 256x8         | LUT            | 
+|toplevel    | mem_119    | 256x8         | LUT            | 
+|toplevel    | mem_118    | 256x8         | LUT            | 
+|toplevel    | mem_121    | 256x8         | LUT            | 
+|toplevel    | mem_120    | 256x8         | LUT            | 
+|toplevel    | mem_123    | 256x8         | LUT            | 
+|toplevel    | mem_122    | 256x8         | LUT            | 
+|toplevel    | mem_125    | 256x8         | LUT            | 
+|toplevel    | mem_124    | 256x8         | LUT            | 
+|toplevel    | mem_127    | 256x8         | LUT            | 
+|toplevel    | mem_126    | 256x8         | LUT            | 
+|toplevel    | mem_129    | 256x8         | LUT            | 
+|toplevel    | mem_128    | 256x8         | LUT            | 
+|toplevel    | mem_131    | 256x8         | LUT            | 
+|toplevel    | mem_130    | 256x8         | LUT            | 
+|toplevel    | mem_133    | 256x8         | LUT            | 
+|toplevel    | mem_132    | 256x8         | LUT            | 
+|toplevel    | mem_135    | 256x8         | LUT            | 
+|toplevel    | mem_134    | 256x8         | LUT            | 
+|toplevel    | mem_137    | 256x8         | LUT            | 
+|toplevel    | mem_136    | 256x8         | LUT            | 
+|toplevel    | mem_139    | 256x8         | LUT            | 
+|toplevel    | mem_138    | 256x8         | LUT            | 
+|toplevel    | mem_141    | 256x8         | LUT            | 
+|toplevel    | mem_140    | 256x8         | LUT            | 
+|toplevel    | mem_157    | 256x8         | LUT            | 
+|toplevel    | mem_156    | 256x8         | LUT            | 
+|toplevel    | mem_155    | 256x8         | LUT            | 
+|toplevel    | mem_154    | 256x8         | LUT            | 
+|toplevel    | mem_153    | 256x8         | LUT            | 
+|toplevel    | mem_152    | 256x8         | LUT            | 
+|toplevel    | mem_151    | 256x8         | LUT            | 
+|toplevel    | mem_150    | 256x8         | LUT            | 
+|toplevel    | mem_149    | 256x8         | LUT            | 
+|toplevel    | mem_148    | 256x8         | LUT            | 
+|toplevel    | mem_147    | 256x8         | LUT            | 
+|toplevel    | mem_146    | 256x8         | LUT            | 
+|toplevel    | mem_145    | 256x8         | LUT            | 
+|toplevel    | mem_144    | 256x8         | LUT            | 
+|toplevel    | mem_143    | 256x8         | LUT            | 
+|toplevel    | mem_142    | 256x8         | LUT            | 
+|toplevel    | mem_159    | 256x8         | LUT            | 
+|toplevel    | mem_158    | 256x8         | LUT            | 
+|toplevel    | mem_161    | 256x8         | LUT            | 
+|toplevel    | mem_160    | 256x8         | LUT            | 
+|toplevel    | mem_163    | 256x8         | LUT            | 
+|toplevel    | mem_162    | 256x8         | LUT            | 
+|toplevel    | mem_165    | 256x8         | LUT            | 
+|toplevel    | mem_164    | 256x8         | LUT            | 
+|toplevel    | mem_167    | 256x8         | LUT            | 
+|toplevel    | mem_166    | 256x8         | LUT            | 
+|toplevel    | mem_169    | 256x8         | LUT            | 
+|toplevel    | mem_168    | 256x8         | LUT            | 
+|toplevel    | mem_171    | 256x8         | LUT            | 
+|toplevel    | mem_170    | 256x8         | LUT            | 
+|toplevel    | mem_173    | 256x8         | LUT            | 
+|toplevel    | mem_172    | 256x8         | LUT            | 
+|toplevel    | mem_175    | 256x8         | LUT            | 
+|toplevel    | mem_174    | 256x8         | LUT            | 
+|toplevel    | mem_177    | 256x8         | LUT            | 
+|toplevel    | mem_176    | 256x8         | LUT            | 
+|toplevel    | mem_179    | 256x8         | LUT            | 
+|toplevel    | mem_178    | 256x8         | LUT            | 
+|toplevel    | mem_181    | 256x8         | LUT            | 
+|toplevel    | mem_180    | 256x8         | LUT            | 
+|toplevel    | mem_183    | 256x8         | LUT            | 
+|toplevel    | mem_182    | 256x8         | LUT            | 
+|toplevel    | mem_185    | 256x8         | LUT            | 
+|toplevel    | mem_184    | 256x8         | LUT            | 
+|toplevel    | mem_187    | 256x8         | LUT            | 
+|toplevel    | mem_186    | 256x8         | LUT            | 
+|toplevel    | mem_189    | 256x8         | LUT            | 
+|toplevel    | mem_188    | 256x8         | LUT            | 
+|toplevel    | mem_205    | 256x8         | LUT            | 
+|toplevel    | mem_204    | 256x8         | LUT            | 
+|toplevel    | mem_203    | 256x8         | LUT            | 
+|toplevel    | mem_202    | 256x8         | LUT            | 
+|toplevel    | mem_201    | 256x8         | LUT            | 
+|toplevel    | mem_200    | 256x8         | LUT            | 
+|toplevel    | mem_199    | 256x8         | LUT            | 
+|toplevel    | mem_198    | 256x8         | LUT            | 
+|toplevel    | mem_197    | 256x8         | LUT            | 
+|toplevel    | mem_196    | 256x8         | LUT            | 
+|toplevel    | mem_195    | 256x8         | LUT            | 
+|toplevel    | mem_194    | 256x8         | LUT            | 
+|toplevel    | mem_193    | 256x8         | LUT            | 
+|toplevel    | mem_192    | 256x8         | LUT            | 
+|toplevel    | mem_191    | 256x8         | LUT            | 
+|toplevel    | mem_190    | 256x8         | LUT            | 
+|toplevel    | mem_207    | 256x8         | LUT            | 
+|toplevel    | mem_206    | 256x8         | LUT            | 
+|toplevel    | mem_209    | 256x8         | LUT            | 
+|toplevel    | mem_208    | 256x8         | LUT            | 
+|toplevel    | mem_211    | 256x8         | LUT            | 
+|toplevel    | mem_210    | 256x8         | LUT            | 
+|toplevel    | mem_213    | 256x8         | LUT            | 
+|toplevel    | mem_212    | 256x8         | LUT            | 
+|toplevel    | mem_215    | 256x8         | LUT            | 
+|toplevel    | mem_214    | 256x8         | LUT            | 
+|toplevel    | mem_217    | 256x8         | LUT            | 
+|toplevel    | mem_216    | 256x8         | LUT            | 
+|toplevel    | mem_219    | 256x8         | LUT            | 
+|toplevel    | mem_218    | 256x8         | LUT            | 
+|toplevel    | mem_221    | 256x8         | LUT            | 
+|toplevel    | mem_220    | 256x8         | LUT            | 
+|toplevel    | mem_223    | 256x8         | LUT            | 
+|toplevel    | mem_222    | 256x8         | LUT            | 
+|toplevel    | mem_225    | 256x8         | LUT            | 
+|toplevel    | mem_224    | 256x8         | LUT            | 
+|toplevel    | mem_227    | 256x8         | LUT            | 
+|toplevel    | mem_226    | 256x8         | LUT            | 
+|toplevel    | mem_229    | 256x8         | LUT            | 
+|toplevel    | mem_228    | 256x8         | LUT            | 
+|toplevel    | mem_231    | 256x8         | LUT            | 
+|toplevel    | mem_230    | 256x8         | LUT            | 
+|toplevel    | mem_233    | 256x8         | LUT            | 
+|toplevel    | mem_232    | 256x8         | LUT            | 
+|toplevel    | mem_235    | 256x8         | LUT            | 
+|toplevel    | mem_234    | 256x8         | LUT            | 
+|toplevel    | mem_237    | 256x8         | LUT            | 
+|toplevel    | mem_236    | 256x8         | LUT            | 
+|toplevel    | mem_253    | 256x8         | LUT            | 
+|toplevel    | mem_252    | 256x8         | LUT            | 
+|toplevel    | mem_251    | 256x8         | LUT            | 
+|toplevel    | mem_250    | 256x8         | LUT            | 
+|toplevel    | mem_249    | 256x8         | LUT            | 
+|toplevel    | mem_248    | 256x8         | LUT            | 
+|toplevel    | mem_247    | 256x8         | LUT            | 
+|toplevel    | mem_246    | 256x8         | LUT            | 
+|toplevel    | mem_245    | 256x8         | LUT            | 
+|toplevel    | mem_244    | 256x8         | LUT            | 
+|toplevel    | mem_243    | 256x8         | LUT            | 
+|toplevel    | mem_242    | 256x8         | LUT            | 
+|toplevel    | mem_241    | 256x8         | LUT            | 
+|toplevel    | mem_240    | 256x8         | LUT            | 
+|toplevel    | mem_239    | 256x8         | LUT            | 
+|toplevel    | mem_238    | 256x8         | LUT            | 
+|toplevel    | mem_255    | 256x8         | LUT            | 
+|toplevel    | mem_254    | 256x8         | LUT            | 
+|toplevel    | mem_257    | 256x8         | LUT            | 
+|toplevel    | mem_256    | 256x8         | LUT            | 
+|toplevel    | mem_259    | 256x8         | LUT            | 
+|toplevel    | mem_258    | 256x8         | LUT            | 
+|toplevel    | mem_261    | 256x8         | LUT            | 
+|toplevel    | mem_260    | 256x8         | LUT            | 
+|toplevel    | mem_263    | 256x8         | LUT            | 
+|toplevel    | mem_262    | 256x8         | LUT            | 
+|toplevel    | mem_265    | 256x8         | LUT            | 
+|toplevel    | mem_264    | 256x8         | LUT            | 
+|toplevel    | mem_267    | 256x8         | LUT            | 
+|toplevel    | mem_266    | 256x8         | LUT            | 
+|toplevel    | mem_269    | 256x8         | LUT            | 
+|toplevel    | mem_268    | 256x8         | LUT            | 
+|toplevel    | mem_271    | 256x8         | LUT            | 
+|toplevel    | mem_270    | 256x8         | LUT            | 
+|toplevel    | mem_273    | 256x8         | LUT            | 
+|toplevel    | mem_272    | 256x8         | LUT            | 
+|toplevel    | mem_275    | 256x8         | LUT            | 
+|toplevel    | mem_274    | 256x8         | LUT            | 
+|toplevel    | mem_277    | 256x8         | LUT            | 
+|toplevel    | mem_276    | 256x8         | LUT            | 
+|toplevel    | mem_279    | 256x8         | LUT            | 
+|toplevel    | mem_278    | 256x8         | LUT            | 
+|toplevel    | mem_281    | 256x8         | LUT            | 
+|toplevel    | mem_280    | 256x8         | LUT            | 
+|toplevel    | mem_283    | 256x8         | LUT            | 
+|toplevel    | mem_282    | 256x8         | LUT            | 
+|toplevel    | mem_285    | 256x8         | LUT            | 
+|toplevel    | mem_284    | 256x8         | LUT            | 
+|toplevel    | mem_301    | 256x8         | LUT            | 
+|toplevel    | mem_300    | 256x8         | LUT            | 
+|toplevel    | mem_299    | 256x8         | LUT            | 
+|toplevel    | mem_298    | 256x8         | LUT            | 
+|toplevel    | mem_297    | 256x8         | LUT            | 
+|toplevel    | mem_296    | 256x8         | LUT            | 
+|toplevel    | mem_295    | 256x8         | LUT            | 
+|toplevel    | mem_294    | 256x8         | LUT            | 
+|toplevel    | mem_293    | 256x8         | LUT            | 
+|toplevel    | mem_292    | 256x8         | LUT            | 
+|toplevel    | mem_291    | 256x8         | LUT            | 
+|toplevel    | mem_290    | 256x8         | LUT            | 
+|toplevel    | mem_289    | 256x8         | LUT            | 
+|toplevel    | mem_288    | 256x8         | LUT            | 
+|toplevel    | mem_287    | 256x8         | LUT            | 
+|toplevel    | mem_286    | 256x8         | LUT            | 
+|toplevel    | mem_303    | 256x8         | LUT            | 
+|toplevel    | mem_302    | 256x8         | LUT            | 
+|toplevel    | mem_305    | 256x8         | LUT            | 
+|toplevel    | mem_304    | 256x8         | LUT            | 
+|toplevel    | mem_307    | 256x8         | LUT            | 
+|toplevel    | mem_306    | 256x8         | LUT            | 
+|toplevel    | mem_309    | 256x8         | LUT            | 
+|toplevel    | mem_308    | 256x8         | LUT            | 
+|toplevel    | mem_311    | 256x8         | LUT            | 
+|toplevel    | mem_310    | 256x8         | LUT            | 
+|toplevel    | mem_313    | 256x8         | LUT            | 
+|toplevel    | mem_312    | 256x8         | LUT            | 
+|toplevel    | mem_315    | 256x8         | LUT            | 
+|toplevel    | mem_314    | 256x8         | LUT            | 
+|toplevel    | mem_317    | 256x8         | LUT            | 
+|toplevel    | mem_316    | 256x8         | LUT            | 
+|toplevel    | mem_319    | 256x8         | LUT            | 
+|toplevel    | mem_318    | 256x8         | LUT            | 
+|toplevel    | mem_321    | 256x8         | LUT            | 
+|toplevel    | mem_320    | 256x8         | LUT            | 
+|toplevel    | mem_323    | 256x8         | LUT            | 
+|toplevel    | mem_322    | 256x8         | LUT            | 
+|toplevel    | mem_325    | 256x8         | LUT            | 
+|toplevel    | mem_324    | 256x8         | LUT            | 
+|toplevel    | mem_327    | 256x8         | LUT            | 
+|toplevel    | mem_326    | 256x8         | LUT            | 
+|toplevel    | mem_329    | 256x8         | LUT            | 
+|toplevel    | mem_328    | 256x8         | LUT            | 
+|toplevel    | mem_331    | 256x8         | LUT            | 
+|toplevel    | mem_330    | 256x8         | LUT            | 
+|toplevel    | mem_333    | 256x8         | LUT            | 
+|toplevel    | mem_332    | 256x8         | LUT            | 
+|toplevel    | mem_349    | 256x8         | LUT            | 
+|toplevel    | mem_348    | 256x8         | LUT            | 
+|toplevel    | mem_347    | 256x8         | LUT            | 
+|toplevel    | mem_346    | 256x8         | LUT            | 
+|toplevel    | mem_345    | 256x8         | LUT            | 
+|toplevel    | mem_344    | 256x8         | LUT            | 
+|toplevel    | mem_343    | 256x8         | LUT            | 
+|toplevel    | mem_342    | 256x8         | LUT            | 
+|toplevel    | mem_341    | 256x8         | LUT            | 
+|toplevel    | mem_340    | 256x8         | LUT            | 
+|toplevel    | mem_339    | 256x8         | LUT            | 
+|toplevel    | mem_338    | 256x8         | LUT            | 
+|toplevel    | mem_337    | 256x8         | LUT            | 
+|toplevel    | mem_336    | 256x8         | LUT            | 
+|toplevel    | mem_335    | 256x8         | LUT            | 
+|toplevel    | mem_334    | 256x8         | LUT            | 
+|toplevel    | mem_351    | 256x8         | LUT            | 
+|toplevel    | mem_350    | 256x8         | LUT            | 
+|toplevel    | mem_353    | 256x8         | LUT            | 
+|toplevel    | mem_352    | 256x8         | LUT            | 
+|toplevel    | mem_355    | 256x8         | LUT            | 
+|toplevel    | mem_354    | 256x8         | LUT            | 
+|toplevel    | mem_357    | 256x8         | LUT            | 
+|toplevel    | mem_356    | 256x8         | LUT            | 
+|toplevel    | mem_359    | 256x8         | LUT            | 
+|toplevel    | mem_358    | 256x8         | LUT            | 
+|toplevel    | mem_361    | 256x8         | LUT            | 
+|toplevel    | mem_360    | 256x8         | LUT            | 
+|toplevel    | mem_363    | 256x8         | LUT            | 
+|toplevel    | mem_362    | 256x8         | LUT            | 
+|toplevel    | mem_365    | 256x8         | LUT            | 
+|toplevel    | mem_364    | 256x8         | LUT            | 
+|toplevel    | mem_367    | 256x8         | LUT            | 
+|toplevel    | mem_366    | 256x8         | LUT            | 
+|toplevel    | mem_369    | 256x8         | LUT            | 
+|toplevel    | mem_368    | 256x8         | LUT            | 
+|toplevel    | mem_371    | 256x8         | LUT            | 
+|toplevel    | mem_370    | 256x8         | LUT            | 
+|toplevel    | mem_373    | 256x8         | LUT            | 
+|toplevel    | mem_372    | 256x8         | LUT            | 
+|toplevel    | mem_375    | 256x8         | LUT            | 
+|toplevel    | mem_374    | 256x8         | LUT            | 
+|toplevel    | mem_377    | 256x8         | LUT            | 
+|toplevel    | mem_376    | 256x8         | LUT            | 
+|toplevel    | mem_379    | 256x8         | LUT            | 
+|toplevel    | mem_378    | 256x8         | LUT            | 
+|toplevel    | mem_381    | 256x8         | LUT            | 
+|toplevel    | mem_380    | 256x8         | LUT            | 
+|toplevel    | mem_397    | 256x8         | LUT            | 
+|toplevel    | mem_396    | 256x8         | LUT            | 
+|toplevel    | mem_395    | 256x8         | LUT            | 
+|toplevel    | mem_394    | 256x8         | LUT            | 
+|toplevel    | mem_393    | 256x8         | LUT            | 
+|toplevel    | mem_392    | 256x8         | LUT            | 
+|toplevel    | mem_391    | 256x8         | LUT            | 
+|toplevel    | mem_390    | 256x8         | LUT            | 
+|toplevel    | mem_389    | 256x8         | LUT            | 
+|toplevel    | mem_388    | 256x8         | LUT            | 
+|toplevel    | mem_387    | 256x8         | LUT            | 
+|toplevel    | mem_386    | 256x8         | LUT            | 
+|toplevel    | mem_385    | 256x8         | LUT            | 
+|toplevel    | mem_384    | 256x8         | LUT            | 
+|toplevel    | mem_383    | 256x8         | LUT            | 
+|toplevel    | mem_382    | 256x8         | LUT            | 
+|toplevel    | mem_399    | 256x8         | LUT            | 
+|toplevel    | mem_398    | 256x8         | LUT            | 
+|toplevel    | mem_401    | 256x8         | LUT            | 
+|toplevel    | mem_400    | 256x8         | LUT            | 
+|toplevel    | mem_403    | 256x8         | LUT            | 
+|toplevel    | mem_402    | 256x8         | LUT            | 
+|toplevel    | mem_405    | 256x8         | LUT            | 
+|toplevel    | mem_404    | 256x8         | LUT            | 
+|toplevel    | mem_407    | 256x8         | LUT            | 
+|toplevel    | mem_406    | 256x8         | LUT            | 
+|toplevel    | mem_409    | 256x8         | LUT            | 
+|toplevel    | mem_408    | 256x8         | LUT            | 
+|toplevel    | mem_411    | 256x8         | LUT            | 
+|toplevel    | mem_410    | 256x8         | LUT            | 
+|toplevel    | mem_413    | 256x8         | LUT            | 
+|toplevel    | mem_412    | 256x8         | LUT            | 
+|toplevel    | mem_415    | 256x8         | LUT            | 
+|toplevel    | mem_414    | 256x8         | LUT            | 
+|toplevel    | mem_417    | 256x8         | LUT            | 
+|toplevel    | mem_416    | 256x8         | LUT            | 
+|toplevel    | mem_419    | 256x8         | LUT            | 
+|toplevel    | mem_418    | 256x8         | LUT            | 
+|toplevel    | mem_421    | 256x8         | LUT            | 
+|toplevel    | mem_420    | 256x8         | LUT            | 
+|toplevel    | mem_423    | 256x8         | LUT            | 
+|toplevel    | mem_422    | 256x8         | LUT            | 
+|toplevel    | mem_425    | 256x8         | LUT            | 
+|toplevel    | mem_424    | 256x8         | LUT            | 
+|toplevel    | mem_427    | 256x8         | LUT            | 
+|toplevel    | mem_426    | 256x8         | LUT            | 
+|toplevel    | mem_429    | 256x8         | LUT            | 
+|toplevel    | mem_428    | 256x8         | LUT            | 
+|toplevel    | mem_445    | 256x8         | LUT            | 
+|toplevel    | mem_444    | 256x8         | LUT            | 
+|toplevel    | mem_443    | 256x8         | LUT            | 
+|toplevel    | mem_442    | 256x8         | LUT            | 
+|toplevel    | mem_441    | 256x8         | LUT            | 
+|toplevel    | mem_440    | 256x8         | LUT            | 
+|toplevel    | mem_439    | 256x8         | LUT            | 
+|toplevel    | mem_438    | 256x8         | LUT            | 
+|toplevel    | mem_437    | 256x8         | LUT            | 
+|toplevel    | mem_436    | 256x8         | LUT            | 
+|toplevel    | mem_435    | 256x8         | LUT            | 
+|toplevel    | mem_434    | 256x8         | LUT            | 
+|toplevel    | mem_433    | 256x8         | LUT            | 
+|toplevel    | mem_432    | 256x8         | LUT            | 
+|toplevel    | mem_431    | 256x8         | LUT            | 
+|toplevel    | mem_430    | 256x8         | LUT            | 
+|toplevel    | mem_447    | 256x8         | LUT            | 
+|toplevel    | mem_446    | 256x8         | LUT            | 
+|toplevel    | mem_449    | 256x8         | LUT            | 
+|toplevel    | mem_448    | 256x8         | LUT            | 
+|toplevel    | mem_451    | 256x8         | LUT            | 
+|toplevel    | mem_450    | 256x8         | LUT            | 
+|toplevel    | mem_453    | 256x8         | LUT            | 
+|toplevel    | mem_452    | 256x8         | LUT            | 
+|toplevel    | mem_455    | 256x8         | LUT            | 
+|toplevel    | mem_454    | 256x8         | LUT            | 
+|toplevel    | mem_457    | 256x8         | LUT            | 
+|toplevel    | mem_456    | 256x8         | LUT            | 
+|toplevel    | mem_459    | 256x8         | LUT            | 
+|toplevel    | mem_458    | 256x8         | LUT            | 
+|toplevel    | mem_461    | 256x8         | LUT            | 
+|toplevel    | mem_460    | 256x8         | LUT            | 
+|toplevel    | mem_463    | 256x8         | LUT            | 
+|toplevel    | mem_462    | 256x8         | LUT            | 
+|toplevel    | mem_465    | 256x8         | LUT            | 
+|toplevel    | mem_464    | 256x8         | LUT            | 
+|toplevel    | mem_467    | 256x8         | LUT            | 
+|toplevel    | mem_466    | 256x8         | LUT            | 
+|toplevel    | mem_469    | 256x8         | LUT            | 
+|toplevel    | mem_468    | 256x8         | LUT            | 
+|toplevel    | mem_471    | 256x8         | LUT            | 
+|toplevel    | mem_470    | 256x8         | LUT            | 
+|toplevel    | mem_473    | 256x8         | LUT            | 
+|toplevel    | mem_472    | 256x8         | LUT            | 
+|toplevel    | mem_475    | 256x8         | LUT            | 
+|toplevel    | mem_474    | 256x8         | LUT            | 
+|toplevel    | mem_477    | 256x8         | LUT            | 
+|toplevel    | mem_476    | 256x8         | LUT            | 
+|toplevel    | mem_493    | 256x8         | LUT            | 
+|toplevel    | mem_492    | 256x8         | LUT            | 
+|toplevel    | mem_491    | 256x8         | LUT            | 
+|toplevel    | mem_490    | 256x8         | LUT            | 
+|toplevel    | mem_489    | 256x8         | LUT            | 
+|toplevel    | mem_488    | 256x8         | LUT            | 
+|toplevel    | mem_487    | 256x8         | LUT            | 
+|toplevel    | mem_486    | 256x8         | LUT            | 
+|toplevel    | mem_485    | 256x8         | LUT            | 
+|toplevel    | mem_484    | 256x8         | LUT            | 
+|toplevel    | mem_483    | 256x8         | LUT            | 
+|toplevel    | mem_482    | 256x8         | LUT            | 
+|toplevel    | mem_481    | 256x8         | LUT            | 
+|toplevel    | mem_480    | 256x8         | LUT            | 
+|toplevel    | mem_479    | 256x8         | LUT            | 
+|toplevel    | mem_478    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
+|toplevel    | p_0_out    | 256x8         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:01 ; elapsed = 00:02:07 . Memory (MB): peak = 3761.230 ; gain = 937.508 ; free physical = 117711 ; free virtual = 132989
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:09 ; elapsed = 00:02:15 . Memory (MB): peak = 3921.980 ; gain = 1098.258 ; free physical = 117656 ; free virtual = 132934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:11 ; elapsed = 00:02:18 . Memory (MB): peak = 3921.980 ; gain = 1098.258 ; free physical = 117670 ; free virtual = 132948
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:14 ; elapsed = 00:02:20 . Memory (MB): peak = 3921.980 ; gain = 1098.258 ; free physical = 117669 ; free virtual = 132947
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:14 ; elapsed = 00:02:20 . Memory (MB): peak = 3921.980 ; gain = 1098.258 ; free physical = 117669 ; free virtual = 132947
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:14 ; elapsed = 00:02:20 . Memory (MB): peak = 3921.980 ; gain = 1098.258 ; free physical = 117672 ; free virtual = 132950
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:14 ; elapsed = 00:02:20 . Memory (MB): peak = 3921.980 ; gain = 1098.258 ; free physical = 117672 ; free virtual = 132950
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:14 ; elapsed = 00:02:20 . Memory (MB): peak = 3921.980 ; gain = 1098.258 ; free physical = 117672 ; free virtual = 132950
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:14 ; elapsed = 00:02:20 . Memory (MB): peak = 3921.980 ; gain = 1098.258 ; free physical = 117672 ; free virtual = 132950
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT2  |  1464|
+|2     |LUT3  |   792|
+|3     |LUT4  |   336|
+|4     |LUT5  |  1064|
+|5     |LUT6  |  7512|
+|6     |MUXF7 |  1664|
+|7     |MUXF8 |   832|
+|8     |FDRE  |  5056|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:14 ; elapsed = 00:02:20 . Memory (MB): peak = 3921.980 ; gain = 1098.258 ; free physical = 117672 ; free virtual = 132950
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 433 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:11 ; elapsed = 00:02:17 . Memory (MB): peak = 3921.980 ; gain = 961.414 ; free physical = 117710 ; free virtual = 132988
+Synthesis Optimization Complete : Time (s): cpu = 00:02:14 ; elapsed = 00:02:20 . Memory (MB): peak = 3921.988 ; gain = 1098.258 ; free physical = 117710 ; free virtual = 132988
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3921.988 ; gain = 0.000 ; free physical = 117799 ; free virtual = 133077
+INFO: [Netlist 29-17] Analyzing 2496 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'toplevel' is not ideal for floorplanning, since the cellview 'toplevel' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/vega/github/primitives/lastmile/dis/constraint.xdc]
+Finished Parsing XDC File [/home/vega/github/primitives/lastmile/dis/constraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3956.965 ; gain = 0.000 ; free physical = 117747 ; free virtual = 133025
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: d274a11b
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:24 ; elapsed = 00:02:28 . Memory (MB): peak = 3956.965 ; gain = 1209.242 ; free physical = 118009 ; free virtual = 133287
+# opt_design
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.75 . Memory (MB): peak = 4020.996 ; gain = 64.031 ; free physical = 118007 ; free virtual = 133285
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 17c572b29
+
+Time (s): cpu = 00:00:00.79 ; elapsed = 00:00:00.30 . Memory (MB): peak = 4032.871 ; gain = 11.875 ; free physical = 117985 ; free virtual = 133263
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 17c572b29
+
+Time (s): cpu = 00:00:00.73 ; elapsed = 00:00:00.30 . Memory (MB): peak = 4032.871 ; gain = 0.000 ; free physical = 117821 ; free virtual = 133100
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 17c572b29
+
+Time (s): cpu = 00:00:00.79 ; elapsed = 00:00:00.35 . Memory (MB): peak = 4032.871 ; gain = 0.000 ; free physical = 117821 ; free virtual = 133099
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 17c572b29
+
+Time (s): cpu = 00:00:00.85 ; elapsed = 00:00:00.41 . Memory (MB): peak = 4032.871 ; gain = 0.000 ; free physical = 117821 ; free virtual = 133099
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 4 BUFG optimization | Checksum: 17c572b29
+
+Time (s): cpu = 00:00:00.88 ; elapsed = 00:00:00.44 . Memory (MB): peak = 4032.871 ; gain = 0.000 ; free physical = 117821 ; free virtual = 133099
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 17c572b29
+
+Time (s): cpu = 00:00:00.89 ; elapsed = 00:00:00.45 . Memory (MB): peak = 4032.871 ; gain = 0.000 ; free physical = 117821 ; free virtual = 133099
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 17c572b29
+
+Time (s): cpu = 00:00:00.91 ; elapsed = 00:00:00.47 . Memory (MB): peak = 4032.871 ; gain = 0.000 ; free physical = 117821 ; free virtual = 133099
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4032.871 ; gain = 0.000 ; free physical = 117821 ; free virtual = 133099
+Ending Logic Optimization Task | Checksum: 17c572b29
+
+Time (s): cpu = 00:00:00.92 ; elapsed = 00:00:00.49 . Memory (MB): peak = 4032.871 ; gain = 0.000 ; free physical = 117821 ; free virtual = 133099
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 17c572b29
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4032.871 ; gain = 0.000 ; free physical = 117986 ; free virtual = 133264
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 17c572b29
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4032.871 ; gain = 0.000 ; free physical = 117986 ; free virtual = 133264
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4032.871 ; gain = 0.000 ; free physical = 117986 ; free virtual = 133264
+Ending Netlist Obfuscation Task | Checksum: 17c572b29
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4032.871 ; gain = 0.000 ; free physical = 117986 ; free virtual = 133264
+INFO: [Common 17-83] Releasing license: Implementation
+18 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+# place_design -directive Default
+Command: place_design -directive Default
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clock" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Default' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4688.273 ; gain = 0.000 ; free physical = 117505 ; free virtual = 132784
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: a9e28a0e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4688.273 ; gain = 0.000 ; free physical = 117505 ; free virtual = 132784
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4688.273 ; gain = 0.000 ; free physical = 117505 ; free virtual = 132784
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ffeab025
+
+Time (s): cpu = 00:00:00.90 ; elapsed = 00:00:00.37 . Memory (MB): peak = 4688.273 ; gain = 0.000 ; free physical = 117538 ; free virtual = 132816
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 17a7f5d3b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4688.273 ; gain = 0.000 ; free physical = 117524 ; free virtual = 132802
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 17a7f5d3b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4688.273 ; gain = 0.000 ; free physical = 117524 ; free virtual = 132802
+Phase 1 Placer Initialization | Checksum: 17a7f5d3b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4688.273 ; gain = 0.000 ; free physical = 117524 ; free virtual = 132802
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 18fb0cd20
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 4688.273 ; gain = 0.000 ; free physical = 117502 ; free virtual = 132780
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 18fb0cd20
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 4688.273 ; gain = 0.000 ; free physical = 117502 ; free virtual = 132780
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 18fb0cd20
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 4732.637 ; gain = 44.363 ; free physical = 117477 ; free virtual = 132755
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 15af9b59d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117474 ; free virtual = 132752
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 15af9b59d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117473 ; free virtual = 132752
+Phase 2.1.1 Partition Driven Placement | Checksum: 15af9b59d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117474 ; free virtual = 132753
+Phase 2.1 Floorplanning | Checksum: 1ba04f61f
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117474 ; free virtual = 132753
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1ba04f61f
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117474 ; free virtual = 132753
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1ba04f61f
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117474 ; free virtual = 132753
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 118 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 59 nets or LUTs. Breaked 0 LUT, combined 59 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-69] No nets found for rewiring optimization.
+INFO: [Physopt 32-661] Optimized 0 net.  Re-placed 0 instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4764.652 ; gain = 0.000 ; free physical = 117469 ; free virtual = 132747
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |             59  |                    59  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |             59  |                    59  |           0  |           5  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.1 Physical Synthesis In Placer | Checksum: 19257a999
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:07 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117469 ; free virtual = 132748
+Phase 2.4 Global Placement Core | Checksum: bdbc3a91
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:08 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117466 ; free virtual = 132744
+Phase 2 Global Placement | Checksum: bdbc3a91
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:08 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117469 ; free virtual = 132748
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1096bdd5a
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:08 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117470 ; free virtual = 132748
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: f250772c
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117468 ; free virtual = 132746
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 16e9da2aa
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:09 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117460 ; free virtual = 132738
+
+Phase 3.3.2 Flow Legalize Slice Clusters
+Phase 3.3.2 Flow Legalize Slice Clusters | Checksum: 1a87bd1b8
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:09 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117458 ; free virtual = 132736
+
+Phase 3.3.3 Slice Area Swap
+Phase 3.3.3 Slice Area Swap | Checksum: 177ddcf45
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:09 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117450 ; free virtual = 132728
+Phase 3.3 Small Shape DP | Checksum: 266989026
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:10 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117456 ; free virtual = 132734
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 1d5e9cf75
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:10 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117456 ; free virtual = 132734
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 15d71f753
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:10 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117456 ; free virtual = 132734
+Phase 3 Detail Placement | Checksum: 15d71f753
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:10 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117456 ; free virtual = 132734
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1f4e17bee
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=3.071 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 27a854a89
+
+Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.06 . Memory (MB): peak = 4764.652 ; gain = 0.000 ; free physical = 117460 ; free virtual = 132738
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 21d78afc8
+
+Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.08 . Memory (MB): peak = 4764.652 ; gain = 0.000 ; free physical = 117460 ; free virtual = 132738
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1f4e17bee
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:12 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117460 ; free virtual = 132738
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=3.071. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1783ef5b9
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117460 ; free virtual = 132738
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117460 ; free virtual = 132738
+Phase 4.1 Post Commit Optimization | Checksum: 1783ef5b9
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117460 ; free virtual = 132738
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1783ef5b9
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117458 ; free virtual = 132736
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1783ef5b9
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117462 ; free virtual = 132740
+Phase 4.3 Placer Reporting | Checksum: 1783ef5b9
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117462 ; free virtual = 132740
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4764.652 ; gain = 0.000 ; free physical = 117462 ; free virtual = 132740
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117462 ; free virtual = 132740
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 11e81165b
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117462 ; free virtual = 132740
+Ending Placer Task | Checksum: f1462f4f
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 4764.652 ; gain = 76.379 ; free physical = 117462 ; free virtual = 132740
+INFO: [Common 17-83] Releasing license: Implementation
+33 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:23 . Memory (MB): peak = 4764.652 ; gain = 731.781 ; free physical = 117537 ; free virtual = 132815
+# route_design -directive Default
+Command: route_design -directive Default
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command route_design
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clock" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Default'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 4cd0d280 ConstDB: 0 ShapeSum: a4755ccf RouteDB: 0
+Nodegraph reading from file.  Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.38 . Memory (MB): peak = 4764.652 ; gain = 0.000 ; free physical = 117385 ; free virtual = 132664
+WARNING: [Route 35-197] Clock port "clock" does not have an associated HD.CLK_SRC. Without this constraint, timing analysis may not be accurate and upstream checks cannot be done to ensure correct clock placement.
+WARNING: [Route 35-198] Port "rst" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "rst". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[73]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[73]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[73]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[73]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[72]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[72]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[72]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[72]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[74]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[74]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[74]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[74]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[75]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[75]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[75]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[75]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[76]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[76]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[76]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[76]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[77]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[77]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[77]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[77]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[79]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[79]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[79]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[79]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[78]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[78]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[78]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[78]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[34]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[34]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[34]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[34]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[32]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[32]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[32]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[32]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[35]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[35]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[35]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[35]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[36]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[36]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[36]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[36]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[37]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[37]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[37]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[37]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[39]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[39]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[39]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[39]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[38]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[38]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[38]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[38]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[33]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[33]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[33]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[33]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[69]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[69]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[71]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[71]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[70]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[70]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[112]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[112]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[112]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[112]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[113]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[113]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[113]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[113]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[114]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[114]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[114]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[114]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[115]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[115]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[115]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[115]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[116]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[116]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[116]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[116]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[117]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[117]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[117]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[117]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[119]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[119]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[119]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[119]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[118]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[118]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[118]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[118]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[28]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[28]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[28]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[28]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[29]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[29]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[29]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[29]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[95]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[95]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[94]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[94]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[87]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[87]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[86]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[86]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[90]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[90]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[64]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[64]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[111]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[111]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[47]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[47]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[89]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[89]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[121]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[121]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[57]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[57]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[122]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[122]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[58]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[58]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[93]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[93]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[125]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[125]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[61]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[61]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[88]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[88]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[120]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[120]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[56]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[56]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[91]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[91]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[123]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[123]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[59]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[59]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[127]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[127]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[63]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[63]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[126]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[126]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[62]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[62]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[66]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[66]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+INFO: [Common 17-14] Message 'Route 35-198' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Post Restoration Checksum: NetGraph: 33ee1b63 NumContArr: c3b2ed1f Constraints: 0 Timing: 0
+Phase 1 Build RT Design | Checksum: f7a10882
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 4764.652 ; gain = 0.000 ; free physical = 117383 ; free virtual = 132661
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: f7a10882
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 4764.652 ; gain = 0.000 ; free physical = 117335 ; free virtual = 132613
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: f7a10882
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 4764.652 ; gain = 0.000 ; free physical = 117335 ; free virtual = 132613
+
+Phase 2.3 Global Clock Net Routing
+Phase 2.3 Global Clock Net Routing | Checksum: f7a10882
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 4764.652 ; gain = 0.000 ; free physical = 117333 ; free virtual = 132612
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1e5719a9d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 4764.652 ; gain = 0.000 ; free physical = 117327 ; free virtual = 132606
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.220  | TNS=0.000  | WHS=0.063  | THS=0.000  |
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 11444
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 6485
+  Number of Partially Routed Nets     = 4959
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 167be0b74
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 4764.652 ; gain = 0.000 ; free physical = 117320 ; free virtual = 132599
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 167be0b74
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 4764.652 ; gain = 0.000 ; free physical = 117320 ; free virtual = 132599
+Phase 3 Initial Routing | Checksum: 111e15f77
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 4772.684 ; gain = 8.031 ; free physical = 117298 ; free virtual = 132576
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2248
+ Number of Nodes with overlaps = 130
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.308  | TNS=0.000  | WHS=0.059  | THS=0.000  |
+
+Phase 4.1 Global Iteration 0 | Checksum: d754d793
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 4772.684 ; gain = 8.031 ; free physical = 117291 ; free virtual = 132569
+
+Phase 4.2 Additional Iteration for Hold
+Phase 4.2 Additional Iteration for Hold | Checksum: f43a7a22
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 4772.684 ; gain = 8.031 ; free physical = 117291 ; free virtual = 132569
+Phase 4 Rip-up And Reroute | Checksum: f43a7a22
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 4772.684 ; gain = 8.031 ; free physical = 117291 ; free virtual = 132569
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: f43a7a22
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 4772.684 ; gain = 8.031 ; free physical = 117291 ; free virtual = 132569
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: f43a7a22
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 4772.684 ; gain = 8.031 ; free physical = 117291 ; free virtual = 132569
+Phase 5 Delay and Skew Optimization | Checksum: f43a7a22
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 4772.684 ; gain = 8.031 ; free physical = 117291 ; free virtual = 132569
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1466a2e29
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 4772.684 ; gain = 8.031 ; free physical = 117290 ; free virtual = 132568
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.308  | TNS=0.000  | WHS=0.059  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1466a2e29
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 4772.684 ; gain = 8.031 ; free physical = 117290 ; free virtual = 132568
+Phase 6 Post Hold Fix | Checksum: 1466a2e29
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 4772.684 ; gain = 8.031 ; free physical = 117290 ; free virtual = 132568
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.11726 %
+  Global Horizontal Routing Utilization  = 1.27223 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 11d608646
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 4772.684 ; gain = 8.031 ; free physical = 117289 ; free virtual = 132567
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 11d608646
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 4772.684 ; gain = 8.031 ; free physical = 117287 ; free virtual = 132565
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 11d608646
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:11 . Memory (MB): peak = 4820.707 ; gain = 56.055 ; free physical = 117286 ; free virtual = 132564
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 11d608646
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:11 . Memory (MB): peak = 4820.707 ; gain = 56.055 ; free physical = 117292 ; free virtual = 132570
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.308  | TNS=0.000  | WHS=0.059  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: 11d608646
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 4820.707 ; gain = 56.055 ; free physical = 117292 ; free virtual = 132570
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 4820.707 ; gain = 56.055 ; free physical = 117359 ; free virtual = 132638
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+14 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:13 . Memory (MB): peak = 4820.707 ; gain = 56.055 ; free physical = 117360 ; free virtual = 132638
+# report_timing -file timing.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clock" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+# report_timing_summary -file timingsum.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+# report_utilization -file util.rpt
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 14 00:45:49 2022...

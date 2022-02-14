@@ -1,0 +1,1719 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Feb 14 00:16:46 2022
+# Process ID: 3041976
+# Current directory: /home/vega/github/primitives/lastmile/blk
+# Command line: vivado -mode batch -source vivado.tcl
+# Log file: /home/vega/github/primitives/lastmile/blk/vivado.log
+# Journal file: /home/vega/github/primitives/lastmile/blk/vivado.jou
+# Running On: katana, OS: Linux, CPU Frequency: 2194.297 MHz, CPU Physical cores: 32, Host memory: 135055 MB
+#-----------------------------------------------------------
+source vivado.tcl
+# read_verilog -sv /home/vega/github/primitives/lastmile/aes/reticle_blk.v
+# read_xdc -mode out_of_context constraint.xdc
+# synth_design -mode "out_of_context" -flatten_hierarchy "rebuilt" -top toplevel -part "xck26-sfvc784-2LV-c"
+Command: synth_design -mode out_of_context -flatten_hierarchy rebuilt -top toplevel -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3042013
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2991.492 ; gain = 167.766 ; free physical = 117530 ; free virtual = 132781
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'toplevel' [/home/vega/github/primitives/lastmile/aes/reticle_blk.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'toplevel' (1#1) [/home/vega/github/primitives/lastmile/aes/reticle_blk.v:5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3228.273 ; gain = 404.547 ; free physical = 118461 ; free virtual = 133714
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3228.273 ; gain = 404.547 ; free physical = 118482 ; free virtual = 133734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3228.273 ; gain = 404.547 ; free physical = 118482 ; free virtual = 133734
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3228.273 ; gain = 0.000 ; free physical = 118471 ; free virtual = 133723
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/vega/github/primitives/lastmile/blk/constraint.xdc]
+Finished Parsing XDC File [/home/vega/github/primitives/lastmile/blk/constraint.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3365.117 ; gain = 0.000 ; free physical = 118374 ; free virtual = 133626
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3365.117 ; gain = 0.000 ; free physical = 118373 ; free virtual = 133625
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3365.117 ; gain = 541.391 ; free physical = 118460 ; free virtual = 133713
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3365.117 ; gain = 541.391 ; free physical = 118460 ; free virtual = 133713
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3365.117 ; gain = 541.391 ; free physical = 118460 ; free virtual = 133713
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3365.117 ; gain = 541.391 ; free physical = 118398 ; free virtual = 133652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 11    
+	   2 Input     32 Bit         XORs := 40    
+	   2 Input      8 Bit         XORs := 10    
+	   4 Input      8 Bit         XORs := 144   
++---Registers : 
+	                8 Bit    Registers := 776   
++---ROMs : 
+	                    ROMs := 344   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:30 . Memory (MB): peak = 3545.352 ; gain = 721.625 ; free physical = 118274 ; free virtual = 133551
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5835] Resources of type BRAM have been overutilized. Used = 344, Available = 288. Will try to implement using LUT-RAM. 
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+-------------+---------------+----------------+
+|Module Name | RTL Object  | Depth x Width | Implemented As | 
++------------+-------------+---------------+----------------+
+|toplevel    | mem_63      | 256x8         | LUT            | 
+|toplevel    | mem_62      | 256x8         | LUT            | 
+|toplevel    | mem_61      | 256x8         | LUT            | 
+|toplevel    | mem_60      | 256x8         | LUT            | 
+|toplevel    | mem_59      | 256x8         | LUT            | 
+|toplevel    | mem_58      | 256x8         | LUT            | 
+|toplevel    | mem_57      | 256x8         | LUT            | 
+|toplevel    | mem_56      | 256x8         | LUT            | 
+|toplevel    | mem_55      | 256x8         | LUT            | 
+|toplevel    | mem_54      | 256x8         | LUT            | 
+|toplevel    | mem_53      | 256x8         | LUT            | 
+|toplevel    | mem_52      | 256x8         | LUT            | 
+|toplevel    | mem_51      | 256x8         | LUT            | 
+|toplevel    | mem_50      | 256x8         | LUT            | 
+|toplevel    | mem_49      | 256x8         | LUT            | 
+|toplevel    | mem_48      | 256x8         | LUT            | 
+|toplevel    | mem_109     | 256x8         | LUT            | 
+|toplevel    | mem_108     | 256x8         | LUT            | 
+|toplevel    | mem_107     | 256x8         | LUT            | 
+|toplevel    | mem_106     | 256x8         | LUT            | 
+|toplevel    | mem_105     | 256x8         | LUT            | 
+|toplevel    | mem_104     | 256x8         | LUT            | 
+|toplevel    | mem_103     | 256x8         | LUT            | 
+|toplevel    | mem_102     | 256x8         | LUT            | 
+|toplevel    | mem_101     | 256x8         | LUT            | 
+|toplevel    | mem_100     | 256x8         | LUT            | 
+|toplevel    | mem_99      | 256x8         | LUT            | 
+|toplevel    | mem_98      | 256x8         | LUT            | 
+|toplevel    | mem_97      | 256x8         | LUT            | 
+|toplevel    | mem_96      | 256x8         | LUT            | 
+|toplevel    | mem_95      | 256x8         | LUT            | 
+|toplevel    | mem_94      | 256x8         | LUT            | 
+|toplevel    | mem_157     | 256x8         | LUT            | 
+|toplevel    | mem_156     | 256x8         | LUT            | 
+|toplevel    | mem_155     | 256x8         | LUT            | 
+|toplevel    | mem_154     | 256x8         | LUT            | 
+|toplevel    | mem_153     | 256x8         | LUT            | 
+|toplevel    | mem_152     | 256x8         | LUT            | 
+|toplevel    | mem_151     | 256x8         | LUT            | 
+|toplevel    | mem_150     | 256x8         | LUT            | 
+|toplevel    | mem_149     | 256x8         | LUT            | 
+|toplevel    | mem_148     | 256x8         | LUT            | 
+|toplevel    | mem_147     | 256x8         | LUT            | 
+|toplevel    | mem_146     | 256x8         | LUT            | 
+|toplevel    | mem_145     | 256x8         | LUT            | 
+|toplevel    | mem_144     | 256x8         | LUT            | 
+|toplevel    | mem_143     | 256x8         | LUT            | 
+|toplevel    | mem_142     | 256x8         | LUT            | 
+|toplevel    | mem_205     | 256x8         | LUT            | 
+|toplevel    | mem_204     | 256x8         | LUT            | 
+|toplevel    | mem_203     | 256x8         | LUT            | 
+|toplevel    | mem_202     | 256x8         | LUT            | 
+|toplevel    | mem_201     | 256x8         | LUT            | 
+|toplevel    | mem_200     | 256x8         | LUT            | 
+|toplevel    | mem_199     | 256x8         | LUT            | 
+|toplevel    | mem_198     | 256x8         | LUT            | 
+|toplevel    | mem_197     | 256x8         | LUT            | 
+|toplevel    | mem_196     | 256x8         | LUT            | 
+|toplevel    | mem_195     | 256x8         | LUT            | 
+|toplevel    | mem_194     | 256x8         | LUT            | 
+|toplevel    | mem_193     | 256x8         | LUT            | 
+|toplevel    | mem_192     | 256x8         | LUT            | 
+|toplevel    | mem_191     | 256x8         | LUT            | 
+|toplevel    | mem_190     | 256x8         | LUT            | 
+|toplevel    | mem_253     | 256x8         | LUT            | 
+|toplevel    | mem_252     | 256x8         | LUT            | 
+|toplevel    | mem_251     | 256x8         | LUT            | 
+|toplevel    | mem_250     | 256x8         | LUT            | 
+|toplevel    | mem_249     | 256x8         | LUT            | 
+|toplevel    | mem_248     | 256x8         | LUT            | 
+|toplevel    | mem_247     | 256x8         | LUT            | 
+|toplevel    | mem_246     | 256x8         | LUT            | 
+|toplevel    | mem_245     | 256x8         | LUT            | 
+|toplevel    | mem_244     | 256x8         | LUT            | 
+|toplevel    | mem_243     | 256x8         | LUT            | 
+|toplevel    | mem_242     | 256x8         | LUT            | 
+|toplevel    | mem_241     | 256x8         | LUT            | 
+|toplevel    | mem_240     | 256x8         | LUT            | 
+|toplevel    | mem_239     | 256x8         | LUT            | 
+|toplevel    | mem_238     | 256x8         | LUT            | 
+|toplevel    | mem_301     | 256x8         | LUT            | 
+|toplevel    | mem_300     | 256x8         | LUT            | 
+|toplevel    | mem_299     | 256x8         | LUT            | 
+|toplevel    | mem_298     | 256x8         | LUT            | 
+|toplevel    | mem_297     | 256x8         | LUT            | 
+|toplevel    | mem_296     | 256x8         | LUT            | 
+|toplevel    | mem_295     | 256x8         | LUT            | 
+|toplevel    | mem_294     | 256x8         | LUT            | 
+|toplevel    | mem_293     | 256x8         | LUT            | 
+|toplevel    | mem_292     | 256x8         | LUT            | 
+|toplevel    | mem_291     | 256x8         | LUT            | 
+|toplevel    | mem_290     | 256x8         | LUT            | 
+|toplevel    | mem_289     | 256x8         | LUT            | 
+|toplevel    | mem_288     | 256x8         | LUT            | 
+|toplevel    | mem_287     | 256x8         | LUT            | 
+|toplevel    | mem_286     | 256x8         | LUT            | 
+|toplevel    | mem_349     | 256x8         | LUT            | 
+|toplevel    | mem_348     | 256x8         | LUT            | 
+|toplevel    | mem_347     | 256x8         | LUT            | 
+|toplevel    | mem_346     | 256x8         | LUT            | 
+|toplevel    | mem_345     | 256x8         | LUT            | 
+|toplevel    | mem_344     | 256x8         | LUT            | 
+|toplevel    | mem_343     | 256x8         | LUT            | 
+|toplevel    | mem_342     | 256x8         | LUT            | 
+|toplevel    | mem_341     | 256x8         | LUT            | 
+|toplevel    | mem_340     | 256x8         | LUT            | 
+|toplevel    | mem_339     | 256x8         | LUT            | 
+|toplevel    | mem_338     | 256x8         | LUT            | 
+|toplevel    | mem_337     | 256x8         | LUT            | 
+|toplevel    | mem_336     | 256x8         | LUT            | 
+|toplevel    | mem_335     | 256x8         | LUT            | 
+|toplevel    | mem_334     | 256x8         | LUT            | 
+|toplevel    | mem_397     | 256x8         | LUT            | 
+|toplevel    | mem_396     | 256x8         | LUT            | 
+|toplevel    | mem_395     | 256x8         | LUT            | 
+|toplevel    | mem_394     | 256x8         | LUT            | 
+|toplevel    | mem_393     | 256x8         | LUT            | 
+|toplevel    | mem_392     | 256x8         | LUT            | 
+|toplevel    | mem_391     | 256x8         | LUT            | 
+|toplevel    | mem_390     | 256x8         | LUT            | 
+|toplevel    | mem_389     | 256x8         | LUT            | 
+|toplevel    | mem_388     | 256x8         | LUT            | 
+|toplevel    | mem_387     | 256x8         | LUT            | 
+|toplevel    | mem_386     | 256x8         | LUT            | 
+|toplevel    | mem_385     | 256x8         | LUT            | 
+|toplevel    | mem_384     | 256x8         | LUT            | 
+|toplevel    | mem_383     | 256x8         | LUT            | 
+|toplevel    | mem_382     | 256x8         | LUT            | 
+|toplevel    | mem_445     | 256x8         | LUT            | 
+|toplevel    | mem_444     | 256x8         | LUT            | 
+|toplevel    | mem_443     | 256x8         | LUT            | 
+|toplevel    | mem_442     | 256x8         | LUT            | 
+|toplevel    | mem_441     | 256x8         | LUT            | 
+|toplevel    | mem_440     | 256x8         | LUT            | 
+|toplevel    | mem_439     | 256x8         | LUT            | 
+|toplevel    | mem_438     | 256x8         | LUT            | 
+|toplevel    | mem_437     | 256x8         | LUT            | 
+|toplevel    | mem_436     | 256x8         | LUT            | 
+|toplevel    | mem_435     | 256x8         | LUT            | 
+|toplevel    | mem_434     | 256x8         | LUT            | 
+|toplevel    | mem_433     | 256x8         | LUT            | 
+|toplevel    | mem_432     | 256x8         | LUT            | 
+|toplevel    | mem_431     | 256x8         | LUT            | 
+|toplevel    | mem_430     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | tmp18_reg   | 256x8         | Block RAM      | 
+|toplevel    | tmp27_reg   | 256x8         | Block RAM      | 
+|toplevel    | tmp25_reg   | 256x8         | Block RAM      | 
+|toplevel    | tmp23_reg   | 256x8         | Block RAM      | 
+|toplevel    | tmp43_reg   | 256x8         | Block RAM      | 
+|toplevel    | tmp52_reg   | 256x8         | Block RAM      | 
+|toplevel    | tmp50_reg   | 256x8         | Block RAM      | 
+|toplevel    | tmp48_reg   | 256x8         | Block RAM      | 
+|toplevel    | tmp68_reg   | 256x8         | Block RAM      | 
+|toplevel    | tmp77_reg   | 256x8         | Block RAM      | 
+|toplevel    | tmp75_reg   | 256x8         | Block RAM      | 
+|toplevel    | tmp73_reg   | 256x8         | Block RAM      | 
+|toplevel    | tmp93_reg   | 256x8         | Block RAM      | 
+|toplevel    | tmp102_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp100_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp98_reg   | 256x8         | Block RAM      | 
+|toplevel    | tmp118_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp127_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp125_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp123_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp143_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp152_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp150_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp148_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp168_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp177_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp175_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp173_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp193_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp200_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp198_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp196_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp216_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp225_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp223_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp221_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp241_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp250_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp248_reg  | 256x8         | Block RAM      | 
+|toplevel    | tmp246_reg  | 256x8         | Block RAM      | 
+|toplevel    | mem_4       | 256x8         | Block RAM      | 
+|toplevel    | mem_3       | 256x8         | Block RAM      | 
+|toplevel    | mem_65      | 256x8         | Block RAM      | 
+|toplevel    | mem_64      | 256x8         | Block RAM      | 
+|toplevel    | mem_67      | 256x8         | Block RAM      | 
+|toplevel    | mem_66      | 256x8         | Block RAM      | 
+|toplevel    | mem_69      | 256x8         | Block RAM      | 
+|toplevel    | mem_68      | 256x8         | Block RAM      | 
+|toplevel    | mem_71      | 256x8         | Block RAM      | 
+|toplevel    | mem_70      | 256x8         | Block RAM      | 
+|toplevel    | mem_73      | 256x8         | Block RAM      | 
+|toplevel    | mem_72      | 256x8         | Block RAM      | 
+|toplevel    | mem_75      | 256x8         | Block RAM      | 
+|toplevel    | mem_74      | 256x8         | Block RAM      | 
+|toplevel    | mem_77      | 256x8         | Block RAM      | 
+|toplevel    | mem_76      | 256x8         | Block RAM      | 
+|toplevel    | mem_79      | 256x8         | Block RAM      | 
+|toplevel    | mem_78      | 256x8         | Block RAM      | 
+|toplevel    | mem_81      | 256x8         | Block RAM      | 
+|toplevel    | mem_80      | 256x8         | Block RAM      | 
+|toplevel    | mem_83      | 256x8         | Block RAM      | 
+|toplevel    | mem_82      | 256x8         | Block RAM      | 
+|toplevel    | mem_85      | 256x8         | Block RAM      | 
+|toplevel    | mem_84      | 256x8         | Block RAM      | 
+|toplevel    | mem_87      | 256x8         | Block RAM      | 
+|toplevel    | mem_86      | 256x8         | Block RAM      | 
+|toplevel    | mem_89      | 256x8         | Block RAM      | 
+|toplevel    | mem_88      | 256x8         | Block RAM      | 
+|toplevel    | mem_91      | 256x8         | Block RAM      | 
+|toplevel    | mem_90      | 256x8         | Block RAM      | 
+|toplevel    | mem_93      | 256x8         | Block RAM      | 
+|toplevel    | mem_92      | 256x8         | Block RAM      | 
+|toplevel    | mem_111     | 256x8         | Block RAM      | 
+|toplevel    | mem_110     | 256x8         | Block RAM      | 
+|toplevel    | mem_113     | 256x8         | Block RAM      | 
+|toplevel    | mem_112     | 256x8         | Block RAM      | 
+|toplevel    | mem_115     | 256x8         | Block RAM      | 
+|toplevel    | mem_114     | 256x8         | Block RAM      | 
+|toplevel    | mem_117     | 256x8         | Block RAM      | 
+|toplevel    | mem_116     | 256x8         | Block RAM      | 
+|toplevel    | mem_119     | 256x8         | Block RAM      | 
+|toplevel    | mem_118     | 256x8         | Block RAM      | 
+|toplevel    | mem_121     | 256x8         | Block RAM      | 
+|toplevel    | mem_120     | 256x8         | Block RAM      | 
+|toplevel    | mem_123     | 256x8         | Block RAM      | 
+|toplevel    | mem_122     | 256x8         | Block RAM      | 
+|toplevel    | mem_125     | 256x8         | Block RAM      | 
+|toplevel    | mem_124     | 256x8         | Block RAM      | 
+|toplevel    | mem_127     | 256x8         | Block RAM      | 
+|toplevel    | mem_126     | 256x8         | Block RAM      | 
+|toplevel    | mem_129     | 256x8         | Block RAM      | 
+|toplevel    | mem_128     | 256x8         | Block RAM      | 
+|toplevel    | mem_131     | 256x8         | Block RAM      | 
+|toplevel    | mem_130     | 256x8         | Block RAM      | 
+|toplevel    | mem_133     | 256x8         | Block RAM      | 
+|toplevel    | mem_132     | 256x8         | Block RAM      | 
+|toplevel    | mem_135     | 256x8         | Block RAM      | 
+|toplevel    | mem_134     | 256x8         | Block RAM      | 
+|toplevel    | mem_137     | 256x8         | Block RAM      | 
+|toplevel    | mem_136     | 256x8         | Block RAM      | 
+|toplevel    | mem_139     | 256x8         | Block RAM      | 
+|toplevel    | mem_138     | 256x8         | Block RAM      | 
+|toplevel    | mem_141     | 256x8         | Block RAM      | 
+|toplevel    | mem_140     | 256x8         | Block RAM      | 
+|toplevel    | mem_159     | 256x8         | Block RAM      | 
+|toplevel    | mem_158     | 256x8         | Block RAM      | 
+|toplevel    | mem_161     | 256x8         | Block RAM      | 
+|toplevel    | mem_160     | 256x8         | Block RAM      | 
+|toplevel    | mem_163     | 256x8         | Block RAM      | 
+|toplevel    | mem_162     | 256x8         | Block RAM      | 
+|toplevel    | mem_165     | 256x8         | Block RAM      | 
+|toplevel    | mem_164     | 256x8         | Block RAM      | 
+|toplevel    | mem_167     | 256x8         | Block RAM      | 
+|toplevel    | mem_166     | 256x8         | Block RAM      | 
+|toplevel    | mem_169     | 256x8         | Block RAM      | 
+|toplevel    | mem_168     | 256x8         | Block RAM      | 
+|toplevel    | mem_171     | 256x8         | Block RAM      | 
+|toplevel    | mem_170     | 256x8         | Block RAM      | 
+|toplevel    | mem_173     | 256x8         | Block RAM      | 
+|toplevel    | mem_172     | 256x8         | Block RAM      | 
+|toplevel    | mem_175     | 256x8         | Block RAM      | 
+|toplevel    | mem_174     | 256x8         | Block RAM      | 
+|toplevel    | mem_177     | 256x8         | Block RAM      | 
+|toplevel    | mem_176     | 256x8         | Block RAM      | 
+|toplevel    | mem_179     | 256x8         | Block RAM      | 
+|toplevel    | mem_178     | 256x8         | Block RAM      | 
+|toplevel    | mem_181     | 256x8         | Block RAM      | 
+|toplevel    | mem_180     | 256x8         | Block RAM      | 
+|toplevel    | mem_183     | 256x8         | Block RAM      | 
+|toplevel    | mem_182     | 256x8         | Block RAM      | 
+|toplevel    | mem_185     | 256x8         | Block RAM      | 
+|toplevel    | mem_184     | 256x8         | Block RAM      | 
+|toplevel    | mem_187     | 256x8         | Block RAM      | 
+|toplevel    | mem_186     | 256x8         | Block RAM      | 
+|toplevel    | mem_189     | 256x8         | Block RAM      | 
+|toplevel    | mem_188     | 256x8         | Block RAM      | 
+|toplevel    | mem_207     | 256x8         | Block RAM      | 
+|toplevel    | mem_206     | 256x8         | Block RAM      | 
+|toplevel    | mem_209     | 256x8         | Block RAM      | 
+|toplevel    | mem_208     | 256x8         | Block RAM      | 
+|toplevel    | mem_211     | 256x8         | Block RAM      | 
+|toplevel    | mem_210     | 256x8         | Block RAM      | 
+|toplevel    | mem_213     | 256x8         | Block RAM      | 
+|toplevel    | mem_212     | 256x8         | Block RAM      | 
+|toplevel    | mem_215     | 256x8         | Block RAM      | 
+|toplevel    | mem_214     | 256x8         | Block RAM      | 
+|toplevel    | mem_217     | 256x8         | Block RAM      | 
+|toplevel    | mem_216     | 256x8         | Block RAM      | 
+|toplevel    | mem_219     | 256x8         | Block RAM      | 
+|toplevel    | mem_218     | 256x8         | Block RAM      | 
+|toplevel    | mem_221     | 256x8         | Block RAM      | 
+|toplevel    | mem_220     | 256x8         | Block RAM      | 
+|toplevel    | mem_223     | 256x8         | Block RAM      | 
+|toplevel    | mem_222     | 256x8         | Block RAM      | 
+|toplevel    | mem_225     | 256x8         | Block RAM      | 
+|toplevel    | mem_224     | 256x8         | Block RAM      | 
+|toplevel    | mem_227     | 256x8         | Block RAM      | 
+|toplevel    | mem_226     | 256x8         | Block RAM      | 
+|toplevel    | mem_229     | 256x8         | Block RAM      | 
+|toplevel    | mem_228     | 256x8         | Block RAM      | 
+|toplevel    | mem_231     | 256x8         | Block RAM      | 
+|toplevel    | mem_230     | 256x8         | Block RAM      | 
+|toplevel    | mem_233     | 256x8         | Block RAM      | 
+|toplevel    | mem_232     | 256x8         | Block RAM      | 
+|toplevel    | mem_235     | 256x8         | Block RAM      | 
+|toplevel    | mem_234     | 256x8         | Block RAM      | 
+|toplevel    | mem_237     | 256x8         | Block RAM      | 
+|toplevel    | mem_236     | 256x8         | Block RAM      | 
+|toplevel    | mem_255     | 256x8         | Block RAM      | 
+|toplevel    | mem_254     | 256x8         | Block RAM      | 
+|toplevel    | mem_257     | 256x8         | Block RAM      | 
+|toplevel    | mem_256     | 256x8         | Block RAM      | 
+|toplevel    | mem_259     | 256x8         | Block RAM      | 
+|toplevel    | mem_258     | 256x8         | Block RAM      | 
+|toplevel    | mem_261     | 256x8         | Block RAM      | 
+|toplevel    | mem_260     | 256x8         | Block RAM      | 
+|toplevel    | mem_263     | 256x8         | Block RAM      | 
+|toplevel    | mem_262     | 256x8         | Block RAM      | 
+|toplevel    | mem_265     | 256x8         | Block RAM      | 
+|toplevel    | mem_264     | 256x8         | Block RAM      | 
+|toplevel    | mem_267     | 256x8         | Block RAM      | 
+|toplevel    | mem_266     | 256x8         | Block RAM      | 
+|toplevel    | mem_269     | 256x8         | Block RAM      | 
+|toplevel    | mem_268     | 256x8         | Block RAM      | 
+|toplevel    | mem_271     | 256x8         | Block RAM      | 
+|toplevel    | mem_270     | 256x8         | Block RAM      | 
+|toplevel    | mem_273     | 256x8         | Block RAM      | 
+|toplevel    | mem_272     | 256x8         | Block RAM      | 
+|toplevel    | mem_275     | 256x8         | Block RAM      | 
+|toplevel    | mem_274     | 256x8         | Block RAM      | 
+|toplevel    | mem_277     | 256x8         | Block RAM      | 
+|toplevel    | mem_276     | 256x8         | Block RAM      | 
+|toplevel    | mem_279     | 256x8         | Block RAM      | 
+|toplevel    | mem_278     | 256x8         | Block RAM      | 
+|toplevel    | mem_281     | 256x8         | Block RAM      | 
+|toplevel    | mem_280     | 256x8         | Block RAM      | 
+|toplevel    | mem_283     | 256x8         | Block RAM      | 
+|toplevel    | mem_282     | 256x8         | Block RAM      | 
+|toplevel    | mem_285     | 256x8         | Block RAM      | 
+|toplevel    | mem_284     | 256x8         | Block RAM      | 
+|toplevel    | mem_303     | 256x8         | Block RAM      | 
+|toplevel    | mem_302     | 256x8         | Block RAM      | 
+|toplevel    | mem_305     | 256x8         | Block RAM      | 
+|toplevel    | mem_304     | 256x8         | Block RAM      | 
+|toplevel    | mem_307     | 256x8         | Block RAM      | 
+|toplevel    | mem_306     | 256x8         | Block RAM      | 
+|toplevel    | mem_309     | 256x8         | Block RAM      | 
+|toplevel    | mem_308     | 256x8         | Block RAM      | 
+|toplevel    | mem_311     | 256x8         | Block RAM      | 
+|toplevel    | mem_310     | 256x8         | Block RAM      | 
+|toplevel    | mem_313     | 256x8         | Block RAM      | 
+|toplevel    | mem_312     | 256x8         | Block RAM      | 
+|toplevel    | mem_315     | 256x8         | Block RAM      | 
+|toplevel    | mem_314     | 256x8         | Block RAM      | 
+|toplevel    | mem_317     | 256x8         | Block RAM      | 
+|toplevel    | mem_316     | 256x8         | Block RAM      | 
+|toplevel    | mem_319     | 256x8         | Block RAM      | 
+|toplevel    | mem_318     | 256x8         | Block RAM      | 
+|toplevel    | mem_321     | 256x8         | Block RAM      | 
+|toplevel    | mem_320     | 256x8         | Block RAM      | 
+|toplevel    | mem_323     | 256x8         | Block RAM      | 
+|toplevel    | mem_322     | 256x8         | Block RAM      | 
+|toplevel    | mem_325     | 256x8         | Block RAM      | 
+|toplevel    | mem_324     | 256x8         | Block RAM      | 
+|toplevel    | mem_327     | 256x8         | Block RAM      | 
+|toplevel    | mem_326     | 256x8         | Block RAM      | 
+|toplevel    | mem_329     | 256x8         | Block RAM      | 
+|toplevel    | mem_328     | 256x8         | Block RAM      | 
+|toplevel    | mem_331     | 256x8         | Block RAM      | 
+|toplevel    | mem_330     | 256x8         | Block RAM      | 
+|toplevel    | mem_333     | 256x8         | Block RAM      | 
+|toplevel    | mem_332     | 256x8         | Block RAM      | 
+|toplevel    | mem_351     | 256x8         | Block RAM      | 
+|toplevel    | mem_350     | 256x8         | Block RAM      | 
+|toplevel    | mem_353     | 256x8         | Block RAM      | 
+|toplevel    | mem_352     | 256x8         | Block RAM      | 
+|toplevel    | mem_355     | 256x8         | Block RAM      | 
+|toplevel    | mem_354     | 256x8         | Block RAM      | 
+|toplevel    | mem_357     | 256x8         | Block RAM      | 
+|toplevel    | mem_356     | 256x8         | Block RAM      | 
+|toplevel    | mem_359     | 256x8         | Block RAM      | 
+|toplevel    | mem_358     | 256x8         | Block RAM      | 
+|toplevel    | mem_361     | 256x8         | Block RAM      | 
+|toplevel    | mem_360     | 256x8         | Block RAM      | 
+|toplevel    | mem_363     | 256x8         | Block RAM      | 
+|toplevel    | mem_362     | 256x8         | Block RAM      | 
+|toplevel    | mem_365     | 256x8         | Block RAM      | 
+|toplevel    | mem_364     | 256x8         | Block RAM      | 
+|toplevel    | mem_367     | 256x8         | Block RAM      | 
+|toplevel    | mem_366     | 256x8         | Block RAM      | 
+|toplevel    | mem_369     | 256x8         | Block RAM      | 
+|toplevel    | mem_368     | 256x8         | Block RAM      | 
+|toplevel    | mem_371     | 256x8         | Block RAM      | 
+|toplevel    | mem_370     | 256x8         | Block RAM      | 
+|toplevel    | mem_373     | 256x8         | Block RAM      | 
+|toplevel    | mem_372     | 256x8         | Block RAM      | 
+|toplevel    | mem_375     | 256x8         | Block RAM      | 
+|toplevel    | mem_374     | 256x8         | Block RAM      | 
+|toplevel    | mem_377     | 256x8         | Block RAM      | 
+|toplevel    | mem_376     | 256x8         | Block RAM      | 
+|toplevel    | mem_379     | 256x8         | Block RAM      | 
+|toplevel    | mem_378     | 256x8         | Block RAM      | 
+|toplevel    | mem_381     | 256x8         | Block RAM      | 
+|toplevel    | mem_380     | 256x8         | Block RAM      | 
+|toplevel    | mem_399     | 256x8         | Block RAM      | 
+|toplevel    | mem_398     | 256x8         | Block RAM      | 
+|toplevel    | mem_401     | 256x8         | Block RAM      | 
+|toplevel    | mem_400     | 256x8         | Block RAM      | 
+|toplevel    | mem_403     | 256x8         | Block RAM      | 
+|toplevel    | mem_402     | 256x8         | Block RAM      | 
+|toplevel    | mem_405     | 256x8         | Block RAM      | 
+|toplevel    | mem_404     | 256x8         | Block RAM      | 
+|toplevel    | mem_407     | 256x8         | Block RAM      | 
+|toplevel    | mem_406     | 256x8         | Block RAM      | 
+|toplevel    | mem_409     | 256x8         | Block RAM      | 
+|toplevel    | mem_408     | 256x8         | Block RAM      | 
+|toplevel    | mem_411     | 256x8         | Block RAM      | 
+|toplevel    | mem_410     | 256x8         | Block RAM      | 
+|toplevel    | mem_413     | 256x8         | Block RAM      | 
+|toplevel    | mem_412     | 256x8         | Block RAM      | 
+|toplevel    | mem_415     | 256x8         | Block RAM      | 
+|toplevel    | mem_414     | 256x8         | Block RAM      | 
+|toplevel    | mem_417     | 256x8         | Block RAM      | 
+|toplevel    | mem_416     | 256x8         | Block RAM      | 
+|toplevel    | mem_419     | 256x8         | Block RAM      | 
+|toplevel    | mem_418     | 256x8         | Block RAM      | 
+|toplevel    | mem_421     | 256x8         | Block RAM      | 
+|toplevel    | mem_420     | 256x8         | Block RAM      | 
+|toplevel    | mem_423     | 256x8         | Block RAM      | 
+|toplevel    | mem_422     | 256x8         | Block RAM      | 
+|toplevel    | mem_425     | 256x8         | Block RAM      | 
+|toplevel    | mem_424     | 256x8         | Block RAM      | 
+|toplevel    | mem_427     | 256x8         | Block RAM      | 
+|toplevel    | mem_426     | 256x8         | Block RAM      | 
+|toplevel    | mem_429     | 256x8         | Block RAM      | 
+|toplevel    | mem_428     | 256x8         | Block RAM      | 
+|toplevel    | mem_447     | 256x8         | Block RAM      | 
+|toplevel    | mem_446     | 256x8         | Block RAM      | 
+|toplevel    | mem_449     | 256x8         | Block RAM      | 
+|toplevel    | mem_448     | 256x8         | Block RAM      | 
+|toplevel    | mem_451     | 256x8         | Block RAM      | 
+|toplevel    | mem_450     | 256x8         | Block RAM      | 
+|toplevel    | mem_453     | 256x8         | Block RAM      | 
+|toplevel    | mem_452     | 256x8         | Block RAM      | 
+|toplevel    | mem_455     | 256x8         | Block RAM      | 
+|toplevel    | mem_454     | 256x8         | Block RAM      | 
+|toplevel    | mem_457     | 256x8         | Block RAM      | 
+|toplevel    | mem_456     | 256x8         | Block RAM      | 
+|toplevel    | mem_459     | 256x8         | Block RAM      | 
+|toplevel    | mem_458     | 256x8         | Block RAM      | 
+|toplevel    | mem_461     | 256x8         | Block RAM      | 
+|toplevel    | mem_460     | 256x8         | Block RAM      | 
+|toplevel    | mem_463     | 256x8         | Block RAM      | 
+|toplevel    | mem_462     | 256x8         | Block RAM      | 
+|toplevel    | mem_465     | 256x8         | Block RAM      | 
+|toplevel    | mem_464     | 256x8         | Block RAM      | 
+|toplevel    | mem_467     | 256x8         | Block RAM      | 
+|toplevel    | mem_466     | 256x8         | Block RAM      | 
+|toplevel    | mem_469     | 256x8         | Block RAM      | 
+|toplevel    | mem_468     | 256x8         | Block RAM      | 
+|toplevel    | mem_471     | 256x8         | Block RAM      | 
+|toplevel    | mem_470     | 256x8         | Block RAM      | 
+|toplevel    | mem_473     | 256x8         | Block RAM      | 
+|toplevel    | mem_472     | 256x8         | Block RAM      | 
+|toplevel    | mem_475     | 256x8         | Block RAM      | 
+|toplevel    | mem_474     | 256x8         | Block RAM      | 
+|toplevel    | mem_477     | 256x8         | Block RAM      | 
+|toplevel    | mem_476     | 256x8         | Block RAM      | 
+|toplevel    | tmp2141_reg | 256x8         | Block RAM      | 
+|toplevel    | tmp2139_reg | 256x8         | Block RAM      | 
+|toplevel    | tmp2137_reg | 256x8         | Block RAM      | 
+|toplevel    | tmp2135_reg | 256x8         | Block RAM      | 
+|toplevel    | tmp2133_reg | 256x8         | Block RAM      | 
+|toplevel    | tmp2131_reg | 256x8         | Block RAM      | 
+|toplevel    | tmp2129_reg | 256x8         | Block RAM      | 
+|toplevel    | tmp2127_reg | 256x8         | Block RAM      | 
+|toplevel    | tmp2125_reg | 256x8         | Block RAM      | 
+|toplevel    | tmp2123_reg | 256x8         | Block RAM      | 
+|toplevel    | tmp2121_reg | 256x8         | Block RAM      | 
+|toplevel    | tmp2119_reg | 256x8         | Block RAM      | 
+|toplevel    | tmp2117_reg | 256x8         | Block RAM      | 
+|toplevel    | tmp2115_reg | 256x8         | Block RAM      | 
+|toplevel    | tmp2113_reg | 256x8         | Block RAM      | 
+|toplevel    | tmp2111_reg | 256x8         | Block RAM      | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
+|toplevel    | p_0_out     | 256x8         | LUT            | 
++------------+-------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:33 ; elapsed = 00:01:37 . Memory (MB): peak = 3733.758 ; gain = 910.031 ; free physical = 117753 ; free virtual = 133030
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:42 ; elapsed = 00:01:46 . Memory (MB): peak = 3917.938 ; gain = 1094.211 ; free physical = 117688 ; free virtual = 132964
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+INFO: [Synth 8-7052] The timing for the instance tmp2141_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp2141_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp2137_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp2137_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp2133_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp2133_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp2129_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp2129_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp2125_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp2125_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp2121_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp2121_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp2117_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp2117_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp2113_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp2113_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp18_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp18_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp25_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp25_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp43_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp43_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp50_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp50_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp68_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp68_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp75_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp75_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp93_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp93_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp100_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp100_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp118_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp118_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp125_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp125_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp143_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp143_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp150_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp150_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp168_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp168_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp175_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp175_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp193_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp193_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp198_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp198_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp216_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp216_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp223_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp223_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp241_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp241_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp248_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance tmp248_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:45 ; elapsed = 00:01:49 . Memory (MB): peak = 3917.938 ; gain = 1094.211 ; free physical = 117709 ; free virtual = 132986
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:48 ; elapsed = 00:01:51 . Memory (MB): peak = 3917.938 ; gain = 1094.211 ; free physical = 117709 ; free virtual = 132986
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:48 ; elapsed = 00:01:51 . Memory (MB): peak = 3917.938 ; gain = 1094.211 ; free physical = 117709 ; free virtual = 132986
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:48 ; elapsed = 00:01:52 . Memory (MB): peak = 3917.938 ; gain = 1094.211 ; free physical = 117709 ; free virtual = 132986
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:48 ; elapsed = 00:01:52 . Memory (MB): peak = 3917.938 ; gain = 1094.211 ; free physical = 117709 ; free virtual = 132986
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:48 ; elapsed = 00:01:52 . Memory (MB): peak = 3917.938 ; gain = 1094.211 ; free physical = 117709 ; free virtual = 132986
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:48 ; elapsed = 00:01:52 . Memory (MB): peak = 3917.938 ; gain = 1094.211 ; free physical = 117709 ; free virtual = 132986
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT2     |   456|
+|2     |LUT3     |   408|
+|3     |LUT4     |   580|
+|4     |LUT5     |  1112|
+|5     |LUT6     |  6552|
+|6     |MUXF7    |  1440|
+|7     |MUXF8    |   608|
+|8     |RAMB18E2 |   166|
+|15    |FDRE     |  1280|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:48 ; elapsed = 00:01:52 . Memory (MB): peak = 3917.938 ; gain = 1094.211 ; free physical = 117709 ; free virtual = 132986
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:45 ; elapsed = 00:01:49 . Memory (MB): peak = 3917.938 ; gain = 957.367 ; free physical = 117751 ; free virtual = 133027
+Synthesis Optimization Complete : Time (s): cpu = 00:01:48 ; elapsed = 00:01:52 . Memory (MB): peak = 3917.945 ; gain = 1094.211 ; free physical = 117751 ; free virtual = 133027
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3917.945 ; gain = 0.000 ; free physical = 117840 ; free virtual = 133117
+INFO: [Netlist 29-17] Analyzing 2048 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'toplevel' is not ideal for floorplanning, since the cellview 'toplevel' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/vega/github/primitives/lastmile/blk/constraint.xdc]
+Finished Parsing XDC File [/home/vega/github/primitives/lastmile/blk/constraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__101_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__101_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__103_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__103_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__105_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__105_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__107_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__107_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__109_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__109_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__111_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__111_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__113_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__113_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__115_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__115_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__117_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__117_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__119_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__119_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__121_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__121_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__123_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__123_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__125_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__125_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__127_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__127_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__129_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__129_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__131_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__131_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__133_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__133_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__135_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__135_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__137_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__137_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__139_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__139_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__141_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__141_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__23_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__23_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__25_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__25_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__27_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__27_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__29_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__29_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__31_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__31_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__33_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__33_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__35_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__35_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__37_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__37_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__39_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__39_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__41_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__41_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__43_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__43_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__45_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__45_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__47_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__47_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__49_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__49_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__51_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__51_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__53_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__53_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__55_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__55_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__57_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__57_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__59_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__59_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__61_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__61_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__63_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__63_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__65_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__65_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__67_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__67_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__69_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__69_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__71_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__71_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__73_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__73_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__75_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__75_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__77_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__77_i_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__79_i_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell g0_b0__79_i_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Common 17-14] Message 'Opt 31-422' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3952.922 ; gain = 0.000 ; free physical = 117789 ; free virtual = 133066
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 4ed04eca
+INFO: [Common 17-83] Releasing license: Synthesis
+174 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:58 ; elapsed = 00:01:59 . Memory (MB): peak = 3952.922 ; gain = 1205.195 ; free physical = 118039 ; free virtual = 133315
+# opt_design
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.76 . Memory (MB): peak = 4016.953 ; gain = 64.031 ; free physical = 118039 ; free virtual = 133316
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: a17fa39e
+
+Time (s): cpu = 00:00:00.89 ; elapsed = 00:00:00.31 . Memory (MB): peak = 4019.922 ; gain = 2.969 ; free physical = 118018 ; free virtual = 133295
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: a17fa39e
+
+Time (s): cpu = 00:00:00.60 ; elapsed = 00:00:00.24 . Memory (MB): peak = 4019.922 ; gain = 0.000 ; free physical = 117836 ; free virtual = 133113
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: a17fa39e
+
+Time (s): cpu = 00:00:00.64 ; elapsed = 00:00:00.29 . Memory (MB): peak = 4019.922 ; gain = 0.000 ; free physical = 117836 ; free virtual = 133113
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: a17fa39e
+
+Time (s): cpu = 00:00:00.71 ; elapsed = 00:00:00.36 . Memory (MB): peak = 4019.922 ; gain = 0.000 ; free physical = 117836 ; free virtual = 133113
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 4 BUFG optimization | Checksum: a17fa39e
+
+Time (s): cpu = 00:00:00.73 ; elapsed = 00:00:00.38 . Memory (MB): peak = 4019.922 ; gain = 0.000 ; free physical = 117836 ; free virtual = 133113
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: a17fa39e
+
+Time (s): cpu = 00:00:00.74 ; elapsed = 00:00:00.39 . Memory (MB): peak = 4019.922 ; gain = 0.000 ; free physical = 117836 ; free virtual = 133113
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: a17fa39e
+
+Time (s): cpu = 00:00:00.75 ; elapsed = 00:00:00.40 . Memory (MB): peak = 4019.922 ; gain = 0.000 ; free physical = 117836 ; free virtual = 133113
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4019.922 ; gain = 0.000 ; free physical = 117836 ; free virtual = 133113
+Ending Logic Optimization Task | Checksum: a17fa39e
+
+Time (s): cpu = 00:00:00.76 ; elapsed = 00:00:00.42 . Memory (MB): peak = 4019.922 ; gain = 0.000 ; free physical = 117836 ; free virtual = 133113
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 166 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 332
+Ending PowerOpt Patch Enables Task | Checksum: a17fa39e
+
+Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.27 . Memory (MB): peak = 4276.043 ; gain = 0.000 ; free physical = 118005 ; free virtual = 133281
+Ending Power Optimization Task | Checksum: a17fa39e
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 4276.043 ; gain = 256.121 ; free physical = 118024 ; free virtual = 133301
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: a17fa39e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4276.043 ; gain = 0.000 ; free physical = 118024 ; free virtual = 133301
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4276.043 ; gain = 0.000 ; free physical = 118024 ; free virtual = 133301
+Ending Netlist Obfuscation Task | Checksum: a17fa39e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4276.043 ; gain = 0.000 ; free physical = 118024 ; free virtual = 133301
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 4276.043 ; gain = 323.121 ; free physical = 118024 ; free virtual = 133301
+# place_design -directive Default
+Command: place_design -directive Default
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clock" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Default' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4633.199 ; gain = 0.000 ; free physical = 117548 ; free virtual = 132825
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 52af54d4
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4633.199 ; gain = 0.000 ; free physical = 117548 ; free virtual = 132825
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4633.199 ; gain = 0.000 ; free physical = 117548 ; free virtual = 132825
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 5f926b5b
+
+Time (s): cpu = 00:00:00.69 ; elapsed = 00:00:00.34 . Memory (MB): peak = 4633.199 ; gain = 0.000 ; free physical = 117579 ; free virtual = 132856
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1528ee5d5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4633.199 ; gain = 0.000 ; free physical = 117559 ; free virtual = 132835
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1528ee5d5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4633.199 ; gain = 0.000 ; free physical = 117559 ; free virtual = 132835
+Phase 1 Placer Initialization | Checksum: 1528ee5d5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4633.199 ; gain = 0.000 ; free physical = 117559 ; free virtual = 132835
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: e98b26ef
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 4633.199 ; gain = 0.000 ; free physical = 117545 ; free virtual = 132822
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: e98b26ef
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 4633.199 ; gain = 0.000 ; free physical = 117545 ; free virtual = 132822
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: e98b26ef
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 4677.562 ; gain = 44.363 ; free physical = 117519 ; free virtual = 132795
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: ccf64bc3
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 4709.578 ; gain = 76.379 ; free physical = 117515 ; free virtual = 132792
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: ccf64bc3
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 4709.578 ; gain = 76.379 ; free physical = 117515 ; free virtual = 132792
+Phase 2.1.1 Partition Driven Placement | Checksum: ccf64bc3
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 4709.578 ; gain = 76.379 ; free physical = 117521 ; free virtual = 132797
+Phase 2.1 Floorplanning | Checksum: ec090c45
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 4709.578 ; gain = 76.379 ; free physical = 117521 ; free virtual = 132797
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: ec090c45
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 4709.578 ; gain = 76.379 ; free physical = 117521 ; free virtual = 132797
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: ec090c45
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 4709.578 ; gain = 76.379 ; free physical = 117521 ; free virtual = 132797
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 18 LUTNM shape to break, 26 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 17, two critical 1, total 18, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 31 nets or LUTs. Breaked 18 LUTs, combined 13 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-69] No nets found for rewiring optimization.
+INFO: [Physopt 32-661] Optimized 0 net.  Re-placed 0 instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4717.582 ; gain = 0.000 ; free physical = 117510 ; free virtual = 132787
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           18  |             13  |                    31  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           18  |             13  |                    31  |           0  |          10  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.1 Physical Synthesis In Placer | Checksum: 169e9994b
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:08 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117512 ; free virtual = 132788
+Phase 2.4 Global Placement Core | Checksum: 92293c6c
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:09 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117506 ; free virtual = 132783
+Phase 2 Global Placement | Checksum: 92293c6c
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:09 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117508 ; free virtual = 132785
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 13609fd5a
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:10 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117509 ; free virtual = 132786
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: b16601b9
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:10 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117508 ; free virtual = 132785
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: e0b86ad3
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:10 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117498 ; free virtual = 132775
+
+Phase 3.3.2 Flow Legalize Slice Clusters
+Phase 3.3.2 Flow Legalize Slice Clusters | Checksum: 96505557
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:10 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117499 ; free virtual = 132775
+
+Phase 3.3.3 Slice Area Swap
+Phase 3.3.3 Slice Area Swap | Checksum: 947da3d7
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:11 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117488 ; free virtual = 132765
+Phase 3.3 Small Shape DP | Checksum: 17bf060ad
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:11 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117492 ; free virtual = 132769
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 17d381499
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117491 ; free virtual = 132768
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 1433c4f42
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117491 ; free virtual = 132768
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 179bac0d1
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:12 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117494 ; free virtual = 132770
+Phase 3 Detail Placement | Checksum: 179bac0d1
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:12 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117494 ; free virtual = 132770
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 21533ebdf
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.521 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 168dc5b44
+
+Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.06 . Memory (MB): peak = 4717.582 ; gain = 0.000 ; free physical = 117492 ; free virtual = 132769
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1eda7cb06
+
+Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.08 . Memory (MB): peak = 4717.582 ; gain = 0.000 ; free physical = 117492 ; free virtual = 132769
+Phase 4.1.1.1 BUFG Insertion | Checksum: 21533ebdf
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:14 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117492 ; free virtual = 132769
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.521. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1bfe476b6
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:14 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117494 ; free virtual = 132771
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:14 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117494 ; free virtual = 132771
+Phase 4.1 Post Commit Optimization | Checksum: 1bfe476b6
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:14 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117494 ; free virtual = 132771
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1bfe476b6
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:15 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117493 ; free virtual = 132770
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1bfe476b6
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:16 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117499 ; free virtual = 132775
+Phase 4.3 Placer Reporting | Checksum: 1bfe476b6
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:16 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117499 ; free virtual = 132775
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4717.582 ; gain = 0.000 ; free physical = 117499 ; free virtual = 132775
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:16 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117499 ; free virtual = 132775
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 154aa03bd
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:16 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117499 ; free virtual = 132775
+Ending Placer Task | Checksum: 1339d0943
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:16 . Memory (MB): peak = 4717.582 ; gain = 84.383 ; free physical = 117499 ; free virtual = 132775
+INFO: [Common 17-83] Releasing license: Implementation
+38 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:25 . Memory (MB): peak = 4717.582 ; gain = 441.539 ; free physical = 117572 ; free virtual = 132848
+# route_design -directive Default
+Command: route_design -directive Default
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command route_design
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clock" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Default'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: fb27df65 ConstDB: 0 ShapeSum: 387529de RouteDB: 0
+Nodegraph reading from file.  Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.38 . Memory (MB): peak = 4717.582 ; gain = 0.000 ; free physical = 117426 ; free virtual = 132703
+WARNING: [Route 35-197] Clock port "clock" does not have an associated HD.CLK_SRC. Without this constraint, timing analysis may not be accurate and upstream checks cannot be done to ensure correct clock placement.
+WARNING: [Route 35-198] Port "rst" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "rst". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[19]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[19]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[18]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[18]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[29]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[29]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[28]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[28]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[42]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[42]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[42]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[42]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[43]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[43]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[43]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[43]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[44]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[44]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[44]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[44]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[45]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[45]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[45]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[45]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[47]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[47]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[47]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[47]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[46]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[46]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[46]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[46]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[40]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[40]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[40]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[40]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[41]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[41]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[41]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[41]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[80]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[80]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[80]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[80]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[81]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[81]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[81]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[81]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[82]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[82]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[82]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[82]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[83]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[83]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[83]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[83]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[84]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[84]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[84]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[84]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[85]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[85]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[85]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[85]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[87]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[87]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[87]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[87]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[86]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[86]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[86]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[86]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[90]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[90]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[90]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[90]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[88]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[88]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[88]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[88]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[89]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[89]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[89]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[89]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[94]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[94]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[94]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[94]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[98]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[98]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[98]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[98]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[101]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[101]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[101]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[101]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[33]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[33]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[97]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[97]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[65]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[65]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[111]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[111]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[79]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[79]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[72]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[72]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[72]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[72]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[73]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[73]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[73]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[73]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[79]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[79]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[78]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[78]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[78]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[78]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[74]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[74]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[74]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[74]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[75]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[75]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_plaintext[75]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_plaintext[75]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "aes_key[76]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "aes_key[76]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+INFO: [Common 17-14] Message 'Route 35-198' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Post Restoration Checksum: NetGraph: b1d7db66 NumContArr: b7811c90 Constraints: 0 Timing: 0
+Phase 1 Build RT Design | Checksum: 16958f7f6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 4717.582 ; gain = 0.000 ; free physical = 117422 ; free virtual = 132699
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 16958f7f6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 4717.582 ; gain = 0.000 ; free physical = 117375 ; free virtual = 132652
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 16958f7f6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 4717.582 ; gain = 0.000 ; free physical = 117375 ; free virtual = 132652
+
+Phase 2.3 Global Clock Net Routing
+Phase 2.3 Global Clock Net Routing | Checksum: 16958f7f6
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 4717.582 ; gain = 0.000 ; free physical = 117374 ; free virtual = 132650
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 250038461
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 4717.582 ; gain = 0.000 ; free physical = 117369 ; free virtual = 132645
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.679  | TNS=0.000  | WHS=0.100  | THS=0.000  |
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 11486
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 5948
+  Number of Partially Routed Nets     = 5538
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 20eeb4fca
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 4717.582 ; gain = 0.000 ; free physical = 117366 ; free virtual = 132642
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 20eeb4fca
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 4717.582 ; gain = 0.000 ; free physical = 117366 ; free virtual = 132642
+Phase 3 Initial Routing | Checksum: 1a7b8b590
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 4717.609 ; gain = 0.027 ; free physical = 117334 ; free virtual = 132611
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 3617
+ Number of Nodes with overlaps = 435
+ Number of Nodes with overlaps = 35
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.516  | TNS=0.000  | WHS=0.116  | THS=0.000  |
+
+Phase 4.1 Global Iteration 0 | Checksum: 13e76cb6b
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:13 . Memory (MB): peak = 4717.609 ; gain = 0.027 ; free physical = 117330 ; free virtual = 132606
+
+Phase 4.2 Additional Iteration for Hold
+Phase 4.2 Additional Iteration for Hold | Checksum: 143a475a9
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:13 . Memory (MB): peak = 4717.609 ; gain = 0.027 ; free physical = 117330 ; free virtual = 132606
+Phase 4 Rip-up And Reroute | Checksum: 143a475a9
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:13 . Memory (MB): peak = 4717.609 ; gain = 0.027 ; free physical = 117330 ; free virtual = 132606
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 143a475a9
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:13 . Memory (MB): peak = 4717.609 ; gain = 0.027 ; free physical = 117330 ; free virtual = 132606
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 143a475a9
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:13 . Memory (MB): peak = 4717.609 ; gain = 0.027 ; free physical = 117330 ; free virtual = 132606
+Phase 5 Delay and Skew Optimization | Checksum: 143a475a9
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:13 . Memory (MB): peak = 4717.609 ; gain = 0.027 ; free physical = 117330 ; free virtual = 132606
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 9eecebf5
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 4717.609 ; gain = 0.027 ; free physical = 117329 ; free virtual = 132606
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.516  | TNS=0.000  | WHS=0.116  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 9eecebf5
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 4717.609 ; gain = 0.027 ; free physical = 117329 ; free virtual = 132606
+Phase 6 Post Hold Fix | Checksum: 9eecebf5
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 4717.609 ; gain = 0.027 ; free physical = 117329 ; free virtual = 132606
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.25041 %
+  Global Horizontal Routing Utilization  = 1.51733 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 11f90d13b
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 4717.609 ; gain = 0.027 ; free physical = 117328 ; free virtual = 132605
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 11f90d13b
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 4717.609 ; gain = 0.027 ; free physical = 117326 ; free virtual = 132603
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 11f90d13b
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:14 . Memory (MB): peak = 4765.633 ; gain = 48.051 ; free physical = 117325 ; free virtual = 132602
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 11f90d13b
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:14 . Memory (MB): peak = 4765.633 ; gain = 48.051 ; free physical = 117327 ; free virtual = 132603
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.516  | TNS=0.000  | WHS=0.116  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: 11f90d13b
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:14 . Memory (MB): peak = 4765.633 ; gain = 48.051 ; free physical = 117326 ; free virtual = 132603
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:14 . Memory (MB): peak = 4765.633 ; gain = 48.051 ; free physical = 117399 ; free virtual = 132675
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+14 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:15 . Memory (MB): peak = 4765.633 ; gain = 48.051 ; free physical = 117399 ; free virtual = 132676
+# report_timing -file timing.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clock" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+# report_timing_summary -file timingsum.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+# report_utilization -file util.rpt
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 14 00:19:39 2022...

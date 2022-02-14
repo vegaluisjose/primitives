@@ -1,0 +1,79 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
+| Date              : Mon Feb 14 00:45:48 2022
+| Host              : katana running 64-bit Ubuntu 20.04.3 LTS
+| Command           : report_timing -file timing.rpt
+| Design            : toplevel
+| Device            : xck26-sfvc784
+| Speed File        : -2LV  PRODUCTION 1.29 08-03-2020
+| Temperature Grade : C
+-----------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             2.308ns  (required time - arrival time)
+  Source:                 tmp102_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clock  {rise@0.000ns fall@1.000ns period=8.000ns})
+  Destination:            p_1_out_rep[4]__128/D
+                            (rising edge-triggered cell FDRE clocked by clock  {rise@0.000ns fall@1.000ns period=8.000ns})
+  Path Group:             clock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clock rise@8.000ns - clock rise@0.000ns)
+  Data Path Delay:        5.691ns  (logic 0.916ns (16.096%)  route 4.775ns (83.904%))
+  Logic Levels:           5  (LUT3=1 LUT4=1 LUT5=1 LUT6=2)
+  Clock Path Skew:        -0.010ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.031ns = ( 8.031 - 8.000 ) 
+    Source Clock Delay      (SCD):    0.041ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clock (IN)
+                         net (fo=5055, unset)         0.041     0.041    clock
+    SLICE_X46Y189        FDRE                                         r  tmp102_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X46Y189        FDRE (Prop_CFF_SLICEL_C_Q)
+                                                      0.114     0.155 r  tmp102_reg[4]/Q
+                         net (fo=5, routed)           0.541     0.696    tmp102[4]
+    SLICE_X41Y190        LUT3 (Prop_D6LUT_SLICEM_I2_O)
+                                                      0.134     0.830 r  aes_ciphertext[36]_INST_0_i_1/O
+                         net (fo=8, routed)           1.070     1.900    tmp108__0[68]
+    SLICE_X36Y224        LUT4 (Prop_H6LUT_SLICEL_I3_O)
+                                                      0.153     2.053 r  aes_ciphertext[4]_INST_0_i_1/O
+                         net (fo=5, routed)           1.406     3.459    tmp206__0[36]
+    SLICE_X18Y237        LUT5 (Prop_F6LUT_SLICEM_I0_O)
+                                                      0.135     3.594 r  g0_b0_i_5__10/O
+                         net (fo=32, routed)          1.247     4.841    tmp1889[36]
+    SLICE_X28Y238        LUT6 (Prop_H6LUT_SLICEM_I4_O)
+                                                      0.228     5.069 r  g1_b4__171/O
+                         net (fo=1, routed)           0.172     5.241    g1_b4__171_n_0
+    SLICE_X28Y238        LUT6 (Prop_A6LUT_SLICEM_I3_O)
+                                                      0.152     5.393 r  p_1_out_rep[4]__128_i_1/O
+                         net (fo=2, routed)           0.339     5.732    p_1_out_rep[4]__128_i_1_n_0
+    SLICE_X28Y238        FDRE                                         r  p_1_out_rep[4]__128/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock rise edge)      8.000     8.000 r  
+                                                      0.000     8.000 r  clock (IN)
+                         net (fo=5055, unset)         0.031     8.031    clock
+    SLICE_X28Y238        FDRE                                         r  p_1_out_rep[4]__128/C
+                         clock pessimism              0.000     8.031    
+                         clock uncertainty           -0.035     7.996    
+    SLICE_X28Y238        FDRE (Setup_EFF_SLICEM_C_D)
+                                                      0.044     8.040    p_1_out_rep[4]__128
+  -------------------------------------------------------------------
+                         required time                          8.040    
+                         arrival time                          -5.732    
+  -------------------------------------------------------------------
+                         slack                                  2.308    
+
+
+
+

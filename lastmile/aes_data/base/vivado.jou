@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Feb 14 00:33:09 2022
+# Process ID: 3111157
+# Current directory: /home/vega/github/primitives/lastmile/base
+# Command line: vivado -mode batch -source vivado.tcl
+# Log file: /home/vega/github/primitives/lastmile/base/vivado.log
+# Journal file: /home/vega/github/primitives/lastmile/base/vivado.jou
+# Running On: katana, OS: Linux, CPU Frequency: 2194.011 MHz, CPU Physical cores: 32, Host memory: 135055 MB
+#-----------------------------------------------------------
+source vivado.tcl
