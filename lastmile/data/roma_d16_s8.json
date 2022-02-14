@@ -1,27 +1,27 @@
 {
-  "latency": 0.176,
+  "latency": 0.247,
   "lut": {
     "used": 8,
-    "total": 70560
+    "total": 117120
   },
   "dsp": {
     "used": 0,
-    "total": 360
+    "total": 1248
   },
   "reg": {
     "used": 15,
-    "total": 141120
+    "total": 234240
   },
   "lram": {
     "used": 0,
-    "total": 28800
+    "total": 57600
   },
   "bram": {
     "used": 0,
-    "total": 216
+    "total": 144
   },
   "uram": {
     "used": 0,
-    "total": 0
+    "total": 64
   }
 }

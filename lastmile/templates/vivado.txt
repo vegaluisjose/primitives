@@ -2,7 +2,7 @@ read_verilog -sv {{verilog_file}}
 {%- if use_constraint %}
 read_xdc -mode out_of_context constraint.xdc
 {%- endif %}
-synth_design -mode "out_of_context" -flatten_hierarchy "rebuilt" -top {{name}} -part "xczu3eg-sbva484-1-e"
+synth_design -mode "out_of_context" -flatten_hierarchy "rebuilt" -top {{name}} -part "xck26-sfvc784-2LV-c"
 opt_design
 place_design -directive Default
 route_design -directive Default

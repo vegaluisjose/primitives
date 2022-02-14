@@ -73,7 +73,7 @@ impl Default for Constraint {
     fn default() -> Constraint {
         Constraint {
             name: "clock".into(),
-            period: 5,
+            period: 8,
         }
     }
 }

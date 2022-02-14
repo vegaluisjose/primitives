@@ -21,7 +21,7 @@ def process(rom="roma", use_bram=False, constraint=True):
                 else open("../{}/{}_d{}_s{}.json".format(folder, rom, d, s))
             )
             j = json.load(f)
-            fix = 0.068 if j["latency"] == 0 else j["latency"]
+            fix = 0.094 if j["latency"] == 0 else j["latency"]
             latency.append(fix)
             lut.append(j["lut"]["used"] + j["lram"]["used"])
             bram.append(j["bram"]["used"])
@@ -46,11 +46,11 @@ for i, c in enumerate(config):
     lat = df.loc[:, ["latency"]]
     lat.plot(ax=axes[1][i], kind="bar")
     axes[1][i].set_xlabel("Number of elements")
-    axes[1][i].set_ylim(top=0.25)
+    axes[1][i].set_ylim(top=0.4)
     axes[1][i].grid(axis="y", linestyle="--")
     axes[1][i].get_legend().remove()
     if i == 0:
-	axes[0][i].set_ylabel("Number of resources")
-	axes[1][i].set_ylabel("Data path delay (ns)")
+        axes[0][i].set_ylabel("Number of resources")
+        axes[1][i].set_ylabel("Data path delay (ns)")
 plt.savefig("rom.pdf")
 
