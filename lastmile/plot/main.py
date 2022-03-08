@@ -35,7 +35,7 @@ def process(rom="roma", use_bram=False, constraint=True):
 
 config = [("roma", False), ("romb", False), ("romb", True)]
 _, axes = plt.subplots(2, 3, figsize=(16, 8))
-titles = ["(a) Verilog", "(b) Verilog", "(c) Reticle"]
+titles = ["(a) Baseline", "(b) PyRTL (generated)", "(c) Reticle"]
 for i, c in enumerate(config):
     df = process(rom=c[0], use_bram=c[1], constraint=True)
     res = df.loc[:, ["lut", "bram"]]
